@@ -1,0 +1,150 @@
+{
+	"city": [
+		{
+			"x": 0,
+			"y": 9,
+			"name": "Red Capital",
+			"faction": "red",
+			"population": 1
+		},
+		{
+			"x": 5,
+			"y": 10,
+			"name": "Red Depot",
+			"faction": "red",
+			"population": 0
+		},
+		{
+			"x": 9,
+			"y": 7,
+			"name": "Red Farm",
+			"faction": "red",
+			"population": 0
+		},
+		{
+			"x": 10,
+			"y": 11,
+			"name": "Red Seaside",
+			"faction": "red",
+			"population": 0
+		},
+		{
+			"x": 14,
+			"y": 7,
+			"name": "Red Fort",
+			"faction": "red",
+			"population": 0
+		},
+		{
+			"x": 14,
+			"y": 3,
+			"name": "Red Bunker",
+			"faction": "red",
+			"population": 0
+		},
+		{
+			"x": 18,
+			"y": 13,
+			"name": "Red Outpost",
+			"faction": "red",
+			"population": 0
+		},
+		{
+			"x": 19,
+			"y": 8,
+			"name": "Red Ruins",
+			"faction": "red",
+			"population": 0
+		},
+		{
+			"x": 39,
+			"y": 6,
+			"name": "Blue Capital",
+			"faction": "blue",
+			"population": 1
+		},
+		{
+			"x": 34,
+			"y": 5,
+			"name": "Blue Depot",
+			"faction": "blue",
+			"population": 0
+		},
+		{
+			"x": 30,
+			"y": 8,
+			"name": "Blue Farm",
+			"faction": "blue",
+			"population": 0
+		},
+		{
+			"x": 29,
+			"y": 4,
+			"name": "Blue Seaside",
+			"faction": "blue",
+			"population": 0
+		},
+		{
+			"x": 25,
+			"y": 8,
+			"name": "Blue Fort",
+			"faction": "blue",
+			"population": 0
+		},
+		{
+			"x": 25,
+			"y": 12,
+			"name": "Blue Bunker",
+			"faction": "blue",
+			"population": 0
+		},
+		{
+			"x": 21,
+			"y": 2,
+			"name": "Blue Outpost",
+			"faction": "blue",
+			"population": 0
+		},
+		{
+			"x": 20,
+			"y": 7,
+			"name": "Blue Ruins",
+			"faction": "blue",
+			"population": 0
+		}
+	],
+	"supply": [
+		{
+			"x": 0,
+			"y": 10,
+			"faction": "red"
+		},
+		{
+			"x": 39,
+			"y": 5,
+			"faction": "blue"
+		}
+	],
+	"oilfield": [
+		{
+			"x": 7,
+			"y": 1,
+			"production": 5
+		},
+		{
+			"x": 20,
+			"y": 15,
+			"production": 5
+		},
+		{
+			"x": 32,
+			"y": 14,
+			"production": 5
+		},
+		{
+			"x": 19,
+			"y": 0,
+			"production": 5
+		}
+	]
+}

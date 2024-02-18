@@ -1,0 +1,866 @@
+{
+    "city": [
+        {
+            "x": 1,
+            "y": 0,
+            "name": "Brest",
+            "faction": "russia",
+            "population": 0
+        },
+        {
+            "x": 14,
+            "y": 0,
+            "name": "Mazyr",
+            "faction": "russia",
+            "population": 0
+        },
+        {
+            "x": 19,
+            "y": 0,
+            "name": "Gomel",
+            "faction": "russia",
+            "population": 0
+        },
+        {
+            "x": 43,
+            "y": 0,
+            "name": "Voronezh",
+            "faction": "russia",
+            "population": 0
+        },
+        {
+            "x": 6,
+            "y": 1,
+            "name": "Pinsk",
+            "faction": "russia",
+            "population": 0
+        },
+        {
+            "x": 34,
+            "y": 2,
+            "name": "Kursk",
+            "faction": "russia",
+            "population": 0
+        },
+        {
+            "x": 17,
+            "y": 4,
+            "name": "Chernobyl",
+            "faction": "ukraine",
+            "population": 0
+        },
+        {
+            "x": 21,
+            "y": 4,
+            "name": "Chernihiv",
+            "faction": "ukraine",
+            "population": 0
+        },
+        {
+            "x": 27,
+            "y": 5,
+            "name": "Konotop",
+            "faction": "ukraine",
+            "population": 0
+        },
+        {
+            "x": 13,
+            "y": 7,
+            "name": "Korosten",
+            "faction": "ukraine",
+            "population": 0
+        },
+        {
+            "x": 31,
+            "y": 7,
+            "name": "Sumy",
+            "faction": "ukraine",
+            "population": 0
+        },
+        {
+            "x": 5,
+            "y": 8,
+            "name": "Luck",
+            "faction": "ukraine",
+            "population": 0
+        },
+        {
+            "x": 27,
+            "y": 8,
+            "name": "Romni",
+            "faction": "ukraine",
+            "population": 0
+        },
+        {
+            "x": 36,
+            "y": 8,
+            "name": "Belgorod",
+            "faction": "russia",
+            "population": 0
+        },
+        {
+            "x": 7,
+            "y": 9,
+            "name": "Ternopil",
+            "faction": "ukraine",
+            "population": 0
+        },
+        {
+            "x": 17,
+            "y": 9,
+            "name": "Kiev",
+            "faction": "ukraine",
+            "population": 0
+        },
+        {
+            "x": 18,
+            "y": 9,
+            "name": "Brovary",
+            "faction": "ukraine",
+            "population": 0
+        },
+        {
+            "x": 23,
+            "y": 9,
+            "name": "Pryluky",
+            "faction": "ukraine",
+            "population": 0
+        },
+        {
+            "x": 13,
+            "y": 10,
+            "name": "Zhitomir",
+            "faction": "ukraine",
+            "population": 0
+        },
+        {
+            "x": 32,
+            "y": 10,
+            "name": "Okhtyrka",
+            "faction": "ukraine",
+            "population": 0
+        },
+        {
+            "x": 1,
+            "y": 11,
+            "name": "Lviv",
+            "faction": "ukraine",
+            "population": 0
+        },
+        {
+            "x": 34,
+            "y": 11,
+            "name": "Kharkiv",
+            "faction": "ukraine",
+            "population": 1
+        },
+        {
+            "x": 17,
+            "y": 12,
+            "name": "Bila Tserkva",
+            "faction": "ukraine",
+            "population": 0
+        },
+        {
+            "x": 27,
+            "y": 12,
+            "name": "Lubny",
+            "faction": "ukraine",
+            "population": 0
+        },
+        {
+            "x": 39,
+            "y": 12,
+            "name": "Kupiansk",
+            "faction": "ukraine",
+            "population": 0
+        },
+        {
+            "x": 31,
+            "y": 13,
+            "name": "Poltava",
+            "faction": "ukraine",
+            "population": 0
+        },
+        {
+            "x": 36,
+            "y": 13,
+            "name": "Balakliia",
+            "faction": "ukraine",
+            "population": 0
+        },
+        {
+            "x": 41,
+            "y": 13,
+            "name": "Svatove",
+            "faction": "ukraine",
+            "population": 0
+        },
+        {
+            "x": 5,
+            "y": 14,
+            "name": "Ternopil",
+            "faction": "ukraine",
+            "population": 0
+        },
+        {
+            "x": 10,
+            "y": 14,
+            "name": "Khmelnytskyi",
+            "faction": "ukraine",
+            "population": 0
+        },
+        {
+            "x": 24,
+            "y": 14,
+            "name": "Cherkasy",
+            "faction": "ukraine",
+            "population": 0
+        },
+        {
+            "x": 44,
+            "y": 14,
+            "name": "Starobilsk",
+            "faction": "ukraine",
+            "population": 0
+        },
+        {
+            "x": 37,
+            "y": 15,
+            "name": "Izyum",
+            "faction": "ukraine",
+            "population": 0
+        },
+        {
+            "x": 46,
+            "y": 15,
+            "name": "Bilovodsk",
+            "faction": "ukraine",
+            "population": 0
+        },
+        {
+            "x": 3,
+            "y": 16,
+            "name": "Ivano-Frankivsk",
+            "faction": "ukraine",
+            "population": 0
+        },
+        {
+            "x": 13,
+            "y": 16,
+            "name": "Vinnytsia",
+            "faction": "ukraine",
+            "population": 0
+        },
+        {
+            "x": 28,
+            "y": 16,
+            "name": "Kremenchuk",
+            "faction": "ukraine",
+            "population": 0
+        },
+        {
+            "x": 39,
+            "y": 16,
+            "name": "Lyman",
+            "faction": "ukraine",
+            "population": 0
+        },
+        {
+            "x": 42,
+            "y": 16,
+            "name": "Sievierodonetsk",
+            "faction": "ukraine",
+            "population": 0
+        },
+        {
+            "x": 17,
+            "y": 17,
+            "name": "Uman",
+            "faction": "ukraine",
+            "population": 0
+        },
+        {
+            "x": 38,
+            "y": 17,
+            "name": "Sloviansk",
+            "faction": "ukraine",
+            "population": 0
+        },
+        {
+            "x": 41,
+            "y": 17,
+            "name": "Lysychansk",
+            "faction": "ukraine",
+            "population": 0
+        },
+        {
+            "x": 38,
+            "y": 18,
+            "name": "Kramatorsk",
+            "faction": "ukraine",
+            "population": 0
+        },
+        {
+            "x": 8,
+            "y": 19,
+            "name": "Chernivtsi",
+            "faction": "ukraine",
+            "population": 0
+        },
+        {
+            "x": 12,
+            "y": 20,
+            "name": "Mohyliv-Podilskyi",
+            "faction": "ukraine",
+            "population": 0
+        },
+        {
+            "x": 24,
+            "y": 19,
+            "name": "Kropyvnytskyi",
+            "faction": "ukraine",
+            "population": 0
+        },
+        {
+            "x": 27,
+            "y": 19,
+            "name": "Oleksandriia",
+            "faction": "ukraine",
+            "population": 0
+        },
+        {
+            "x": 30,
+            "y": 19,
+            "name": "Kamianske",
+            "faction": "ukraine",
+            "population": 0
+        },
+        {
+            "x": 32,
+            "y": 19,
+            "name": "Dnipro",
+            "faction": "ukraine",
+            "population": 0
+        },
+        {
+            "x": 34,
+            "y": 19,
+            "name": "Pavlohrad",
+            "faction": "ukraine",
+            "population": 0
+        },
+        {
+            "x": 40,
+            "y": 19,
+            "name": "Bakhmut",
+            "faction": "ukraine",
+            "population": 0
+        },
+        {
+            "x": 42,
+            "y": 19,
+            "name": "Alchevsk",
+            "faction": "ukraine",
+            "population": 0
+        },
+        {
+            "x": 44,
+            "y": 19,
+            "name": "Luhansk",
+            "faction": "ukraine",
+            "population": 0
+        },
+        {
+            "x": 37,
+            "y": 20,
+            "name": "Pokrovsk",
+            "faction": "ukraine",
+            "population": 0
+        },
+        {
+            "x": 39,
+            "y": 20,
+            "name": "Kostiantynivka",
+            "faction": "ukraine",
+            "population": 0
+        },
+        {
+            "x": 20,
+            "y": 21,
+            "name": "Pervomaisk",
+            "faction": "ukraine",
+            "population": 0
+        },
+        {
+            "x": 41,
+            "y": 21,
+            "name": "Horlivka",
+            "faction": "ukraine",
+            "population": 0
+        },
+        {
+            "x": 46,
+            "y": 21,
+            "name": "Kamensk-Shakhtinsky",
+            "faction": "ukraine",
+            "population": 0
+        },
+        {
+            "x": 27,
+            "y": 22,
+            "name": "Kryvyi Rih",
+            "faction": "ukraine",
+            "population": 0
+        },
+        {
+            "x": 33,
+            "y": 22,
+            "name": "Zaporizhzhia",
+            "faction": "ukraine",
+            "population": 0
+        },
+        {
+            "x": 40,
+            "y": 22,
+            "name": "Donetsk",
+            "faction": "ukraine",
+            "population": 0
+        },
+        {
+            "x": 44,
+            "y": 22,
+            "name": "Sverdlovsk",
+            "faction": "ukraine",
+            "population": 0
+        },
+        {
+            "x": 12,
+            "y": 23,
+            "name": "Balti",
+            "faction": "ukraine",
+            "population": 0
+        },
+        {
+            "x": 15,
+            "y": 23,
+            "name": "Podilsk",
+            "faction": "ukraine",
+            "population": 0
+        },
+        {
+            "x": 37,
+            "y": 23,
+            "name": "Velyka Novosilka",
+            "faction": "ukraine",
+            "population": 0
+        },
+        {
+            "x": 2,
+            "y": 24,
+            "name": "Bistrita",
+            "faction": "ukraine",
+            "population": 0
+        },
+        {
+            "x": 23,
+            "y": 24,
+            "name": "Voznesensk",
+            "faction": "ukraine",
+            "population": 0
+        },
+        {
+            "x": 30,
+            "y": 24,
+            "name": "Nikopol",
+            "faction": "ukraine",
+            "population": 0
+        },
+        {
+            "x": 36,
+            "y": 24,
+            "name": "Orikhiv",
+            "faction": "ukraine",
+            "population": 0
+        },
+        {
+            "x": 46,
+            "y": 24,
+            "name": "Shakhty",
+            "faction": "russia",
+            "population": 0
+        },
+        {
+            "x": 33,
+            "y": 25,
+            "name": "Vasylivka",
+            "faction": "ukraine",
+            "population": 0
+        },
+        {
+            "x": 12,
+            "y": 26,
+            "name": "Lasi",
+            "faction": "ukraine",
+            "population": 0
+        },
+        {
+            "x": 24,
+            "y": 26,
+            "name": "Mykolaiv",
+            "faction": "ukraine",
+            "population": 0
+        },
+        {
+            "x": 31,
+            "y": 26,
+            "name": "Enerhodar",
+            "faction": "ukraine",
+            "population": 0
+        },
+        {
+            "x": 48,
+            "y": 26,
+            "name": "Semikarakorsk ",
+            "faction": "ukraine",
+            "population": 0
+        },
+        {
+            "x": 2,
+            "y": 27,
+            "name": "Targu Mures",
+            "faction": "ukraine",
+            "population": 0
+        },
+        {
+            "x": 14,
+            "y": 27,
+            "name": "Chisinau",
+            "faction": "ukraine",
+            "population": 0
+        },
+        {
+            "x": 35,
+            "y": 27,
+            "name": "Tokmak",
+            "faction": "ukraine",
+            "population": 0
+        },
+        {
+            "x": 41,
+            "y": 27,
+            "name": "Taganrog",
+            "faction": "russia",
+            "population": 0
+        },
+        {
+            "x": 44,
+            "y": 27,
+            "name": "Rostov",
+            "faction": "russia",
+            "population": 0
+        },
+        {
+            "x": 9,
+            "y": 28,
+            "name": "Piatra Neamt",
+            "faction": "ukraine",
+            "population": 0
+        },
+        {
+            "x": 17,
+            "y": 28,
+            "name": "Tiraspol",
+            "faction": "ukraine",
+            "population": 0
+        },
+        {
+            "x": 25,
+            "y": 28,
+            "name": "Kherson",
+            "faction": "ukraine",
+            "population": 0
+        },
+        {
+            "x": 27,
+            "y": 28,
+            "name": "Nova Kakhovka",
+            "faction": "ukraine",
+            "population": 0
+        },
+        {
+            "x": 33,
+            "y": 28,
+            "name": "Melitopol",
+            "faction": "ukraine",
+            "population": 0
+        },
+        {
+            "x": 39,
+            "y": 28,
+            "name": "Mariupol",
+            "faction": "ukraine",
+            "population": 0
+        },
+        {
+            "x": 20,
+            "y": 29,
+            "name": "Odessa",
+            "faction": "ukraine",
+            "population": 0
+        },
+        {
+            "x": 36,
+            "y": 29,
+            "name": "Berdiansk",
+            "faction": "ukraine",
+            "population": 0
+        },
+        {
+            "x": 10,
+            "y": 30,
+            "name": "Bacau",
+            "faction": "ukraine",
+            "population": 0
+        },
+        {
+            "x": 4,
+            "y": 31,
+            "name": "Brasov",
+            "faction": "ukraine",
+            "population": 0
+        },
+        {
+            "x": 28,
+            "y": 32,
+            "name": "Armiansk",
+            "faction": "russia",
+            "population": 0
+        },
+        {
+            "x": 29,
+            "y": 33,
+            "name": "Dzhankoi",
+            "faction": "russia",
+            "population": 0
+        },
+        {
+            "x": 44,
+            "y": 32,
+            "name": "Tikhoretsk",
+            "faction": "russia",
+            "population": 0
+        },
+        {
+            "x": 12,
+            "y": 34,
+            "name": "Galati",
+            "faction": "ukraine",
+            "population": 0
+        },
+        {
+            "x": 14,
+            "y": 34,
+            "name": "Izmail",
+            "faction": "ukraine",
+            "population": 0
+        },
+        {
+            "x": 4,
+            "y": 35,
+            "name": "Ploiesti",
+            "faction": "ukraine",
+            "population": 0
+        },
+        {
+            "x": 8,
+            "y": 35,
+            "name": "Buzau",
+            "faction": "ukraine",
+            "population": 0
+        },
+        {
+            "x": 11,
+            "y": 35,
+            "name": "Braila",
+            "faction": "ukraine",
+            "population": 0
+        },
+        {
+            "x": 35,
+            "y": 35,
+            "name": "Kerch",
+            "faction": "russia",
+            "population": 0
+        },
+        {
+            "x": 46,
+            "y": 35,
+            "name": "Kropotkin",
+            "faction": "russia",
+            "population": 0
+        },
+        {
+            "x": 1,
+            "y": 36,
+            "name": "Pitesti",
+            "faction": "ukraine",
+            "population": 0
+        },
+        {
+            "x": 29,
+            "y": 36,
+            "name": "Simferopol",
+            "faction": "russia",
+            "population": 0
+        },
+        {
+            "x": 42,
+            "y": 36,
+            "name": "Krasnodar",
+            "faction": "russia",
+            "population": 0
+        },
+        {
+            "x": 49,
+            "y": 36,
+            "name": "Stavropol",
+            "faction": "russia",
+            "population": 0
+        },
+        {
+            "x": 31,
+            "y": 37,
+            "name": "Feodosiia",
+            "faction": "russia",
+            "population": 0
+        },
+        {
+            "x": 40,
+            "y": 37,
+            "name": "Novorossiysk",
+            "faction": "russia",
+            "population": 0
+        },
+        {
+            "x": 44,
+            "y": 37,
+            "name": "Maykop",
+            "faction": "russia",
+            "population": 0
+        },
+        {
+            "x": 5,
+            "y": 38,
+            "name": "Bucharest",
+            "faction": "ukraine",
+            "population": 0
+        },
+        {
+            "x": 14,
+            "y": 38,
+            "name": "Constanta",
+            "faction": "ukraine",
+            "population": 0
+        },
+        {
+            "x": 28,
+            "y": 38,
+            "name": "Sevastopol",
+            "faction": "russia",
+            "population": 0
+        },
+        {
+            "x": 43,
+            "y": 38,
+            "name": "Tuapse",
+            "faction": "russia",
+            "population": 0
+        },
+        {
+            "x": 9,
+            "y": 39,
+            "name": "Calarasi",
+            "faction": "ukraine",
+            "population": 0
+        }
+    ],
+    "supply": [
+        {
+            "x": 3,
+            "y": 0,
+            "faction": "russia"
+        },
+        {
+            "x": 18,
+            "y": 0,
+            "faction": "russia"
+        },
+        {
+            "x": 21,
+            "y": 0,
+            "faction": "russia"
+        },
+        {
+            "x": 28,
+            "y": 0,
+            "faction": "russia"
+        },
+        {
+            "x": 34,
+            "y": 0,
+            "faction": "russia"
+        },
+        {
+            "x": 49,
+            "y": 1,
+            "faction": "russia"
+        },
+        {
+            "x": 0,
+            "y": 9,
+            "faction": "russia"
+        },
+        {
+            "x": 18,
+            "y": 10,
+            "faction": "ukraine"
+        },
+        {
+            "x": 6,
+            "y": 14,
+            "faction": "ukraine"
+        },
+        {
+            "x": 27,
+            "y": 17,
+            "faction": "ukraine"
+        },
+        {
+            "x": 31,
+            "y": 21,
+            "faction": "ukraine"
+        },
+        {
+            "x": 49,
+            "y": 27,
+            "faction": "russia"
+        },
+        {
+            "x": 19,
+            "y": 29,
+            "faction": "ukraine"
+        },
+        {
+            "x": 49,
+            "y": 37,
+            "faction": "russia"
+        },
+        {
+            "x": 43,
+            "y": 39,
+            "faction": "russia"
+        }
+    ],
+    "oilfield": []
+}

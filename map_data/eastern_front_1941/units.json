@@ -1,0 +1,1208 @@
+[
+	{
+		"x": 19,
+		"y": 16,
+		"faction": "axis",
+		"unit_type": "german_panzer_group",
+		"attack": 4,
+		"defense": 4,
+		"movement": 4
+	},
+	{
+		"x": 19,
+		"y": 17,
+		"faction": "axis",
+		"unit_type": "german_motorized_infantry",
+		"attack": 3,
+		"defense": 3,
+		"movement": 4
+	},
+	{
+		"x": 23,
+		"y": 28,
+		"faction": "axis",
+		"unit_type": "german_panzer_group",
+		"attack": 4,
+		"defense": 4,
+		"movement": 4
+	},
+	{
+		"x": 23,
+		"y": 29,
+		"faction": "axis",
+		"unit_type": "german_panzer_group",
+		"attack": 4,
+		"defense": 4,
+		"movement": 4
+	},
+	{
+		"x": 20,
+		"y": 19,
+		"faction": "axis",
+		"unit_type": "german_panzer_group",
+		"attack": 4,
+		"defense": 4,
+		"movement": 4
+	},
+	{
+		"x": 22,
+		"y": 24,
+		"faction": "axis",
+		"unit_type": "german_panzer_group",
+		"attack": 4,
+		"defense": 4,
+		"movement": 4
+	},
+	{
+		"x": 21,
+		"y": 25,
+		"faction": "axis",
+		"unit_type": "german_panzer_group",
+		"attack": 4,
+		"defense": 4,
+		"movement": 4
+	},
+	{
+		"x": 23,
+		"y": 28,
+		"faction": "axis",
+		"unit_type": "german_infantry",
+		"attack": 2,
+		"defense": 2,
+		"movement": 2
+	},
+	{
+		"x": 20,
+		"y": 18,
+		"faction": "axis",
+		"unit_type": "german_infantry",
+		"attack": 2,
+		"defense": 2,
+		"movement": 2
+	},
+	{
+		"x": 22,
+		"y": 26,
+		"faction": "axis",
+		"unit_type": "german_infantry",
+		"attack": 2,
+		"defense": 2,
+		"movement": 2
+	},
+	{
+		"x": 22,
+		"y": 27,
+		"faction": "axis",
+		"unit_type": "german_infantry",
+		"attack": 2,
+		"defense": 2,
+		"movement": 2
+	},
+	{
+		"x": 19,
+		"y": 14,
+		"faction": "axis",
+		"unit_type": "german_infantry",
+		"attack": 2,
+		"defense": 2,
+		"movement": 2
+	},
+	{
+		"x": 18,
+		"y": 15,
+		"faction": "axis",
+		"unit_type": "german_infantry",
+		"attack": 2,
+		"defense": 2,
+		"movement": 2
+	},
+	{
+		"x": 22,
+		"y": 29,
+		"faction": "axis",
+		"unit_type": "german_infantry",
+		"attack": 2,
+		"defense": 2,
+		"movement": 2
+	},
+	{
+		"x": 22,
+		"y": 30,
+		"faction": "axis",
+		"unit_type": "german_infantry",
+		"attack": 2,
+		"defense": 2,
+		"movement": 2
+	},
+	{
+		"x": 28,
+		"y": 38,
+		"faction": "axis",
+		"unit_type": "german_infantry",
+		"attack": 2,
+		"defense": 2,
+		"movement": 2
+	},
+	{
+		"x": 28,
+		"y": 39,
+		"faction": "axis",
+		"unit_type": "german_infantry",
+		"attack": 2,
+		"defense": 2,
+		"movement": 2
+	},
+	{
+		"x": 19,
+		"y": 18,
+		"faction": "axis",
+		"unit_type": "german_infantry",
+		"attack": 2,
+		"defense": 2,
+		"movement": 2
+	},
+	{
+		"x": 19,
+		"y": 20,
+		"faction": "axis",
+		"unit_type": "german_infantry",
+		"attack": 2,
+		"defense": 2,
+		"movement": 2
+	},
+	{
+		"x": 19,
+		"y": 24,
+		"faction": "axis",
+		"unit_type": "german_infantry",
+		"attack": 2,
+		"defense": 2,
+		"movement": 2
+	},
+	{
+		"x": 20,
+		"y": 24,
+		"faction": "axis",
+		"unit_type": "german_infantry",
+		"attack": 2,
+		"defense": 2,
+		"movement": 2
+	},
+	{
+		"x": 21,
+		"y": 24,
+		"faction": "axis",
+		"unit_type": "german_infantry",
+		"attack": 2,
+		"defense": 2,
+		"movement": 2
+	},
+	{
+		"x": 18,
+		"y": 22,
+		"faction": "axis",
+		"unit_type": "german_infantry",
+		"attack": 2,
+		"defense": 2,
+		"movement": 2
+	},
+	{
+		"x": 21,
+		"y": 31,
+		"faction": "axis",
+		"unit_type": "italian_infantry",
+		"attack": 2,
+		"defense": 1,
+		"movement": 3
+	},
+	{
+		"x": 22,
+		"y": 33,
+		"faction": "axis",
+		"unit_type": "german_light_infantry",
+		"attack": 2,
+		"defense": 1,
+		"movement": 3
+	},
+	{
+		"x": 23,
+		"y": 35,
+		"faction": "axis",
+		"unit_type": "german_light_infantry",
+		"attack": 2,
+		"defense": 1,
+		"movement": 3
+	},
+	{
+		"x": 28,
+		"y": 40,
+		"faction": "axis",
+		"unit_type": "romanian_infantry",
+		"attack": 2,
+		"defense": 1,
+		"movement": 2
+	},
+	{
+		"x": 25,
+		"y": 36,
+		"faction": "axis",
+		"unit_type": "romanian_infantry",
+		"attack": 2,
+		"defense": 1,
+		"movement": 2
+	},
+	{
+		"x": 26,
+		"y": 36,
+		"faction": "axis",
+		"unit_type": "romanian_infantry",
+		"attack": 2,
+		"defense": 1,
+		"movement": 2
+	},
+	{
+		"x": 27,
+		"y": 36,
+		"faction": "axis",
+		"unit_type": "romanian_infantry",
+		"attack": 2,
+		"defense": 1,
+		"movement": 2
+	},
+	{
+		"x": 28,
+		"y": 42,
+		"faction": "axis",
+		"unit_type": "romanian_infantry",
+		"attack": 2,
+		"defense": 1,
+		"movement": 2
+	},
+	{
+		"x": 29,
+		"y": 44,
+		"faction": "axis",
+		"unit_type": "romanian_infantry",
+		"attack": 2,
+		"defense": 1,
+		"movement": 2
+	},
+	{
+		"x": 22,
+		"y": 29,
+		"faction": "axis",
+		"unit_type": "german_motorized_infantry",
+		"attack": 3,
+		"defense": 3,
+		"movement": 4
+	},
+	{
+		"x": 19,
+		"y": 19,
+		"faction": "axis",
+		"unit_type": "german_motorized_infantry",
+		"attack": 3,
+		"defense": 3,
+		"movement": 4
+	},
+	{
+		"x": 28,
+		"y": 41,
+		"faction": "axis",
+		"unit_type": "german_motorized_infantry",
+		"attack": 3,
+		"defense": 3,
+		"movement": 4
+	},
+	{
+		"x": 27,
+		"y": 37,
+		"faction": "axis",
+		"unit_type": "german_motorized_infantry",
+		"attack": 3,
+		"defense": 3,
+		"movement": 4
+	},
+	{
+		"x": 32,
+		"y": 2,
+		"faction": "axis",
+		"unit_type": "axis_fortification",
+		"attack": 0,
+		"defense": 3,
+		"movement": 0
+	},
+	{
+		"x": 33,
+		"y": 1,
+		"faction": "axis",
+		"unit_type": "axis_fortification",
+		"attack": 0,
+		"defense": 3,
+		"movement": 0
+	},
+	{
+		"x": 32,
+		"y": 1,
+		"faction": "axis",
+		"unit_type": "axis_fortification",
+		"attack": 0,
+		"defense": 3,
+		"movement": 0
+	},
+	{
+		"x": 39,
+		"y": 2,
+		"faction": "axis",
+		"unit_type": "axis_fortification",
+		"attack": 0,
+		"defense": 3,
+		"movement": 0
+	},
+	{
+		"x": 40,
+		"y": 2,
+		"faction": "axis",
+		"unit_type": "axis_fortification",
+		"attack": 0,
+		"defense": 3,
+		"movement": 0
+	},
+	{
+		"x": 41,
+		"y": 1,
+		"faction": "axis",
+		"unit_type": "axis_fortification",
+		"attack": 0,
+		"defense": 3,
+		"movement": 0
+	},
+	{
+		"x": 41,
+		"y": 2,
+		"faction": "axis",
+		"unit_type": "axis_fortification",
+		"attack": 0,
+		"defense": 3,
+		"movement": 0
+	},
+	{
+		"x": 25,
+		"y": 32,
+		"faction": "soviet",
+		"unit_type": "soviet_tank_unit",
+		"attack": 2,
+		"defense": 2,
+		"movement": 3
+	},
+	{
+		"x": 24,
+		"y": 33,
+		"faction": "soviet",
+		"unit_type": "soviet_tank_unit",
+		"attack": 2,
+		"defense": 2,
+		"movement": 3
+	},
+	{
+		"x": 25,
+		"y": 30,
+		"faction": "soviet",
+		"unit_type": "soviet_tank_unit",
+		"attack": 2,
+		"defense": 2,
+		"movement": 3
+	},
+	{
+		"x": 22,
+		"y": 19,
+		"faction": "soviet",
+		"unit_type": "soviet_tank_unit",
+		"attack": 2,
+		"defense": 2,
+		"movement": 3
+	},
+	{
+		"x": 21,
+		"y": 21,
+		"faction": "soviet",
+		"unit_type": "soviet_tank_unit",
+		"attack": 2,
+		"defense": 2,
+		"movement": 3
+	},
+	{
+		"x": 21,
+		"y": 22,
+		"faction": "soviet",
+		"unit_type": "soviet_tank_unit",
+		"attack": 2,
+		"defense": 2,
+		"movement": 3
+	},
+	{
+		"x": 24,
+		"y": 22,
+		"faction": "soviet",
+		"unit_type": "soviet_tank_unit",
+		"attack": 2,
+		"defense": 2,
+		"movement": 3
+	},
+	{
+		"x": 20,
+		"y": 15,
+		"faction": "soviet",
+		"unit_type": "soviet_tank_unit",
+		"attack": 2,
+		"defense": 2,
+		"movement": 3
+	},
+	{
+		"x": 21,
+		"y": 17,
+		"faction": "soviet",
+		"unit_type": "soviet_tank_unit",
+		"attack": 2,
+		"defense": 2,
+		"movement": 3
+	},
+	{
+		"x": 23,
+		"y": 23,
+		"faction": "soviet",
+		"unit_type": "soviet_tank_unit",
+		"attack": 2,
+		"defense": 2,
+		"movement": 3
+	},
+	{
+		"x": 26,
+		"y": 31,
+		"faction": "soviet",
+		"unit_type": "soviet_tank_unit",
+		"attack": 2,
+		"defense": 2,
+		"movement": 3
+	},
+	{
+		"x": 27,
+		"y": 31,
+		"faction": "soviet",
+		"unit_type": "soviet_tank_unit",
+		"attack": 2,
+		"defense": 2,
+		"movement": 3
+	},
+	{
+		"x": 30,
+		"y": 38,
+		"faction": "soviet",
+		"unit_type": "soviet_tank_unit",
+		"attack": 2,
+		"defense": 2,
+		"movement": 3
+	},
+	{
+		"x": 31,
+		"y": 40,
+		"faction": "soviet",
+		"unit_type": "soviet_tank_unit",
+		"attack": 2,
+		"defense": 2,
+		"movement": 3
+	},
+	{
+		"x": 24,
+		"y": 30,
+		"faction": "soviet",
+		"unit_type": "soviet_tank_unit",
+		"attack": 2,
+		"defense": 2,
+		"movement": 3
+	},
+	{
+		"x": 23,
+		"y": 17,
+		"faction": "soviet",
+		"unit_type": "soviet_guards_tank_unit",
+		"attack": 3,
+		"defense": 3,
+		"movement": 3
+	},
+	{
+		"x": 25,
+		"y": 17,
+		"faction": "soviet",
+		"unit_type": "soviet_guards_tank_unit",
+		"attack": 3,
+		"defense": 3,
+		"movement": 3
+	},
+	{
+		"x": 40,
+		"y": 4,
+		"faction": "soviet",
+		"unit_type": "soviet_infantry",
+		"attack": 1,
+		"defense": 2,
+		"movement": 2
+	},
+	{
+		"x": 41,
+		"y": 3,
+		"faction": "soviet",
+		"unit_type": "soviet_infantry",
+		"attack": 1,
+		"defense": 2,
+		"movement": 2
+	},
+	{
+		"x": 32,
+		"y": 3,
+		"faction": "soviet",
+		"unit_type": "soviet_fortification",
+		"attack": 0,
+		"defense": 1,
+		"movement": 0
+	},
+	{
+		"x": 34,
+		"y": 2,
+		"faction": "soviet",
+		"unit_type": "soviet_fortification",
+		"attack": 0,
+		"defense": 1,
+		"movement": 0
+	},
+	{
+		"x": 23,
+		"y": 25,
+		"faction": "soviet",
+		"unit_type": "soviet_conscript_infantry",
+		"attack": 1,
+		"defense": 1,
+		"movement": 2
+	},
+	{
+		"x": 19,
+		"y": 23,
+		"faction": "soviet",
+		"unit_type": "soviet_infantry",
+		"attack": 1,
+		"defense": 2,
+		"movement": 2
+	},
+	{
+		"x": 20,
+		"y": 13,
+		"faction": "soviet",
+		"unit_type": "soviet_conscript_infantry",
+		"attack": 1,
+		"defense": 1,
+		"movement": 2
+	},
+	{
+		"x": 20,
+		"y": 16,
+		"faction": "soviet",
+		"unit_type": "soviet_conscript_infantry",
+		"attack": 1,
+		"defense": 1,
+		"movement": 2
+	},
+	{
+		"x": 21,
+		"y": 18,
+		"faction": "soviet",
+		"unit_type": "soviet_conscript_infantry",
+		"attack": 1,
+		"defense": 1,
+		"movement": 2
+	},
+	{
+		"x": 24,
+		"y": 18,
+		"faction": "soviet",
+		"unit_type": "soviet_conscript_infantry",
+		"attack": 1,
+		"defense": 1,
+		"movement": 2
+	},
+	{
+		"x": 24,
+		"y": 20,
+		"faction": "soviet",
+		"unit_type": "soviet_conscript_infantry",
+		"attack": 1,
+		"defense": 1,
+		"movement": 2
+	},
+	{
+		"x": 24,
+		"y": 19,
+		"faction": "soviet",
+		"unit_type": "soviet_conscript_infantry",
+		"attack": 1,
+		"defense": 1,
+		"movement": 2
+	},
+	{
+		"x": 22,
+		"y": 15,
+		"faction": "soviet",
+		"unit_type": "soviet_conscript_infantry",
+		"attack": 1,
+		"defense": 1,
+		"movement": 2
+	},
+	{
+		"x": 21,
+		"y": 19,
+		"faction": "soviet",
+		"unit_type": "soviet_infantry",
+		"attack": 1,
+		"defense": 2,
+		"movement": 2
+	},
+	{
+		"x": 21,
+		"y": 20,
+		"faction": "soviet",
+		"unit_type": "soviet_conscript_infantry",
+		"attack": 1,
+		"defense": 1,
+		"movement": 2
+	},
+	{
+		"x": 19,
+		"y": 21,
+		"faction": "soviet",
+		"unit_type": "soviet_infantry",
+		"attack": 1,
+		"defense": 2,
+		"movement": 2
+	},
+	{
+		"x": 21,
+		"y": 23,
+		"faction": "soviet",
+		"unit_type": "soviet_conscript_infantry",
+		"attack": 1,
+		"defense": 1,
+		"movement": 2
+	},
+	{
+		"x": 23,
+		"y": 30,
+		"faction": "soviet",
+		"unit_type": "soviet_infantry",
+		"attack": 1,
+		"defense": 2,
+		"movement": 2
+	},
+	{
+		"x": 23,
+		"y": 33,
+		"faction": "soviet",
+		"unit_type": "soviet_conscript_infantry",
+		"attack": 1,
+		"defense": 1,
+		"movement": 2
+	},
+	{
+		"x": 25,
+		"y": 35,
+		"faction": "soviet",
+		"unit_type": "soviet_infantry",
+		"attack": 1,
+		"defense": 2,
+		"movement": 2
+	},
+	{
+		"x": 27,
+		"y": 35,
+		"faction": "soviet",
+		"unit_type": "soviet_conscript_infantry",
+		"attack": 1,
+		"defense": 1,
+		"movement": 2
+	},
+	{
+		"x": 24,
+		"y": 27,
+		"faction": "soviet",
+		"unit_type": "soviet_conscript_infantry",
+		"attack": 1,
+		"defense": 1,
+		"movement": 2
+	},
+	{
+		"x": 25,
+		"y": 29,
+		"faction": "soviet",
+		"unit_type": "soviet_infantry",
+		"attack": 1,
+		"defense": 2,
+		"movement": 2
+	},
+	{
+		"x": 28,
+		"y": 37,
+		"faction": "soviet",
+		"unit_type": "soviet_infantry",
+		"attack": 1,
+		"defense": 2,
+		"movement": 2
+	},
+	{
+		"x": 29,
+		"y": 38,
+		"faction": "soviet",
+		"unit_type": "soviet_infantry",
+		"attack": 1,
+		"defense": 2,
+		"movement": 2
+	},
+	{
+		"x": 29,
+		"y": 41,
+		"faction": "soviet",
+		"unit_type": "soviet_infantry",
+		"attack": 1,
+		"defense": 2,
+		"movement": 2
+	},
+	{
+		"x": 22,
+		"y": 31,
+		"faction": "soviet",
+		"unit_type": "soviet_conscript_infantry",
+		"attack": 1,
+		"defense": 1,
+		"movement": 2
+	},
+	{
+		"x": 26,
+		"y": 26,
+		"faction": "soviet",
+		"unit_type": "soviet_conscript_infantry",
+		"attack": 1,
+		"defense": 1,
+		"movement": 2
+	},
+	{
+		"x": 30,
+		"y": 31,
+		"faction": "soviet",
+		"unit_type": "soviet_conscript_infantry",
+		"attack": 1,
+		"defense": 1,
+		"movement": 2
+	},
+	{
+		"x": 24,
+		"y": 35,
+		"faction": "soviet",
+		"unit_type": "soviet_conscript_infantry",
+		"attack": 1,
+		"defense": 1,
+		"movement": 2
+	},
+	{
+		"x": 26,
+		"y": 32,
+		"faction": "soviet",
+		"unit_type": "soviet_infantry",
+		"attack": 1,
+		"defense": 2,
+		"movement": 2
+	},
+	{
+		"x": 31,
+		"y": 42,
+		"faction": "soviet",
+		"unit_type": "soviet_infantry",
+		"attack": 1,
+		"defense": 2,
+		"movement": 2
+	},
+	{
+		"x": 25,
+		"y": 23,
+		"faction": "soviet",
+		"unit_type": "soviet_conscript_infantry",
+		"attack": 1,
+		"defense": 1,
+		"movement": 2
+	},
+	{
+		"x": 28,
+		"y": 30,
+		"faction": "soviet",
+		"unit_type": "soviet_conscript_infantry",
+		"attack": 1,
+		"defense": 1,
+		"movement": 2
+	},
+	{
+		"x": 30,
+		"y": 7,
+		"faction": "soviet",
+		"unit_type": "soviet_fortification",
+		"attack": 0,
+		"defense": 1,
+		"movement": 0
+	},
+	{
+		"x": 31,
+		"y": 6,
+		"faction": "soviet",
+		"unit_type": "soviet_fortification",
+		"attack": 0,
+		"defense": 1,
+		"movement": 0
+	},
+	{
+		"x": 30,
+		"y": 8,
+		"faction": "soviet",
+		"unit_type": "soviet_fortification",
+		"attack": 0,
+		"defense": 1,
+		"movement": 0
+	},
+	{
+		"x": 30,
+		"y": 13,
+		"faction": "soviet",
+		"unit_type": "soviet_fortification",
+		"attack": 0,
+		"defense": 1,
+		"movement": 0
+	},
+	{
+		"x": 31,
+		"y": 14,
+		"faction": "soviet",
+		"unit_type": "soviet_fortification",
+		"attack": 0,
+		"defense": 1,
+		"movement": 0
+	},
+	{
+		"x": 30,
+		"y": 15,
+		"faction": "soviet",
+		"unit_type": "soviet_fortification",
+		"attack": 0,
+		"defense": 1,
+		"movement": 0
+	},
+	{
+		"x": 29,
+		"y": 29,
+		"faction": "soviet",
+		"unit_type": "soviet_fortification",
+		"attack": 0,
+		"defense": 2,
+		"movement": 0
+	},
+	{
+		"x": 30,
+		"y": 30,
+		"faction": "soviet",
+		"unit_type": "soviet_fortification",
+		"attack": 0,
+		"defense": 2,
+		"movement": 0
+	},
+	{
+		"x": 32,
+		"y": 38,
+		"faction": "soviet",
+		"unit_type": "soviet_fortification",
+		"attack": 0,
+		"defense": 1,
+		"movement": 0
+	},
+	{
+		"x": 29,
+		"y": 36,
+		"faction": "soviet",
+		"unit_type": "soviet_fortification",
+		"attack": 0,
+		"defense": 1,
+		"movement": 0
+	},
+	{
+		"x": 30,
+		"y": 37,
+		"faction": "soviet",
+		"unit_type": "soviet_fortification",
+		"attack": 0,
+		"defense": 1,
+		"movement": 0
+	},
+	{
+		"x": 28,
+		"y": 35,
+		"faction": "soviet",
+		"unit_type": "soviet_fortification",
+		"attack": 0,
+		"defense": 1,
+		"movement": 0
+	},
+	{
+		"x": 28,
+		"y": 33,
+		"faction": "soviet",
+		"unit_type": "soviet_fortification",
+		"attack": 0,
+		"defense": 2,
+		"movement": 0
+	},
+	{
+		"x": 27,
+		"y": 30,
+		"faction": "soviet",
+		"unit_type": "soviet_fortification",
+		"attack": 0,
+		"defense": 2,
+		"movement": 0
+	},
+	{
+		"x": 27,
+		"y": 28,
+		"faction": "soviet",
+		"unit_type": "soviet_fortification",
+		"attack": 0,
+		"defense": 2,
+		"movement": 0
+	},
+	{
+		"x": 30,
+		"y": 36,
+		"faction": "soviet",
+		"unit_type": "soviet_fortification",
+		"attack": 0,
+		"defense": 1,
+		"movement": 0
+	},
+	{
+		"x": 26,
+		"y": 29,
+		"faction": "soviet",
+		"unit_type": "soviet_fortification",
+		"attack": 0,
+		"defense": 1,
+		"movement": 0
+	},
+	{
+		"x": 40,
+		"y": 17,
+		"faction": "soviet",
+		"unit_type": "soviet_fortification",
+		"attack": 0,
+		"defense": 2,
+		"movement": 0
+	},
+	{
+		"x": 41,
+		"y": 19,
+		"faction": "soviet",
+		"unit_type": "soviet_fortification",
+		"attack": 0,
+		"defense": 2,
+		"movement": 0
+	},
+	{
+		"x": 27,
+		"y": 20,
+		"faction": "soviet",
+		"unit_type": "soviet_fortification",
+		"attack": 0,
+		"defense": 2,
+		"movement": 0
+	},
+	{
+		"x": 27,
+		"y": 22,
+		"faction": "soviet",
+		"unit_type": "soviet_fortification",
+		"attack": 0,
+		"defense": 2,
+		"movement": 0
+	},
+	{
+		"x": 26,
+		"y": 16,
+		"faction": "soviet",
+		"unit_type": "soviet_fortification",
+		"attack": 0,
+		"defense": 1,
+		"movement": 0
+	},
+	{
+		"x": 27,
+		"y": 17,
+		"faction": "soviet",
+		"unit_type": "soviet_fortification",
+		"attack": 0,
+		"defense": 1,
+		"movement": 0
+	},
+	{
+		"x": 29,
+		"y": 18,
+		"faction": "soviet",
+		"unit_type": "soviet_fortification",
+		"attack": 0,
+		"defense": 1,
+		"movement": 0
+	},
+	{
+		"x": 27,
+		"y": 26,
+		"faction": "soviet",
+		"unit_type": "soviet_fortification",
+		"attack": 0,
+		"defense": 2,
+		"movement": 0
+	},
+	{
+		"x": 28,
+		"y": 32,
+		"faction": "soviet",
+		"unit_type": "soviet_fortification",
+		"attack": 0,
+		"defense": 1,
+		"movement": 0
+	},
+	{
+		"x": 33,
+		"y": 2,
+		"faction": "soviet",
+		"unit_type": "soviet_fortification",
+		"attack": 0,
+		"defense": 1,
+		"movement": 0
+	},
+	{
+		"x": 31,
+		"y": 23,
+		"faction": "soviet",
+		"unit_type": "soviet_fortification",
+		"attack": 0,
+		"defense": 2,
+		"movement": 0
+	},
+	{
+		"x": 26,
+		"y": 9,
+		"faction": "soviet",
+		"unit_type": "soviet_fortification",
+		"attack": 0,
+		"defense": 1,
+		"movement": 0
+	},
+	{
+		"x": 27,
+		"y": 9,
+		"faction": "soviet",
+		"unit_type": "soviet_fortification",
+		"attack": 0,
+		"defense": 1,
+		"movement": 0
+	},
+	{
+		"x": 33,
+		"y": 6,
+		"faction": "soviet",
+		"unit_type": "soviet_fortification",
+		"attack": 0,
+		"defense": 1,
+		"movement": 0
+	},
+	{
+		"x": 34,
+		"y": 6,
+		"faction": "soviet",
+		"unit_type": "soviet_fortification",
+		"attack": 0,
+		"defense": 1,
+		"movement": 0
+	},
+	{
+		"x": 31,
+		"y": 19,
+		"faction": "soviet",
+		"unit_type": "soviet_fortification",
+		"attack": 0,
+		"defense": 1,
+		"movement": 0
+	},
+	{
+		"x": 32,
+		"y": 20,
+		"faction": "soviet",
+		"unit_type": "soviet_fortification",
+		"attack": 0,
+		"defense": 1,
+		"movement": 0
+	},
+	{
+		"x": 31,
+		"y": 21,
+		"faction": "soviet",
+		"unit_type": "soviet_fortification",
+		"attack": 0,
+		"defense": 1,
+		"movement": 0
+	},
+	{
+		"x": 24,
+		"y": 21,
+		"faction": "soviet",
+		"unit_type": "soviet_fortification",
+		"attack": 0,
+		"defense": 2,
+		"movement": 0
+	},
+	{
+		"x": 35,
+		"y": 40,
+		"faction": "soviet",
+		"unit_type": "soviet_fortification",
+		"attack": 0,
+		"defense": 1,
+		"movement": 0
+	},
+	{
+		"x": 36,
+		"y": 40,
+		"faction": "soviet",
+		"unit_type": "soviet_fortification",
+		"attack": 0,
+		"defense": 1,
+		"movement": 0
+	},
+	{
+		"x": 31,
+		"y": 30,
+		"faction": "soviet",
+		"unit_type": "soviet_fortification",
+		"attack": 0,
+		"defense": 2,
+		"movement": 0
+	},
+	{
+		"x": 35,
+		"y": 32,
+		"faction": "soviet",
+		"unit_type": "soviet_fortification",
+		"attack": 0,
+		"defense": 1,
+		"movement": 0
+	}
+]

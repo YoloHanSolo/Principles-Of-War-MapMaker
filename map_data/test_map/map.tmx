@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.9" tiledversion="1.9.2" orientation="hexagonal" renderorder="left-up" width="10" height="10" tilewidth="120" tileheight="140" infinite="0" hexsidelength="80" staggeraxis="y" staggerindex="odd" nextlayerid="9" nextobjectid="1">
+ <tileset firstgid="1" source="../tsx/terrain_grass.tsx"/>
+ <tileset firstgid="2" source="../tsx/terrain_water.tsx"/>
+ <tileset firstgid="3" source="../tsx/terrain_mountain.tsx"/>
+ <tileset firstgid="4" source="../tsx/terrain_sand.tsx"/>
+ <tileset firstgid="5" source="../tsx/terrain_mud.tsx"/>
+ <tileset firstgid="6" source="../tsx/terrain_snow.tsx"/>
+ <tileset firstgid="7" source="../tsx/terrain_forest.tsx"/>
+ <tileset firstgid="8" source="../tsx/faction_n.tsx"/>
+ <tileset firstgid="9" source="../tsx/faction_0.tsx"/>
+ <tileset firstgid="10" source="../tsx/faction_1.tsx"/>
+ <tileset firstgid="11" source="../tsx/type_default.tsx"/>
+ <tileset firstgid="12" source="../tsx/type_city.tsx"/>
+ <tileset firstgid="13" source="../tsx/type_depot.tsx"/>
+ <tileset firstgid="14" source="../tsx/type_oilfield.tsx"/>
+ <tileset firstgid="15" source="../tsx/railway_1.tsx"/>
+ <tileset firstgid="16" source="../tsx/railway_0.tsx"/>
+ <tileset firstgid="17" source="../tsx/river_0.tsx"/>
+ <tileset firstgid="18" source="../tsx/river_1.tsx"/>
+ <tileset firstgid="19" source="../tsx/river_2.tsx"/>
+ <tileset firstgid="20" source="../tsx/river_3.tsx"/>
+ <tileset firstgid="21" source="../tsx/river_4.tsx"/>
+ <tileset firstgid="22" source="../tsx/river_5.tsx"/>
+ <tileset firstgid="23" source="../tsx/river_6.tsx"/>
+ <tileset firstgid="24" source="../tsx/river_7.tsx"/>
+ <tileset firstgid="25" source="../tsx/objective_0.tsx"/>
+ <tileset firstgid="26" source="../tsx/objective_1.tsx"/>
+ <tileset firstgid="27" source="../tsx/port_0.tsx"/>
+ <tileset firstgid="28" source="../tsx/port_1.tsx"/>
+ <objectgroup id="5" name="other">
+  <properties>
+   <property name="filename" value="test_map.json"/>
+   <property name="mapname" value="Test Map"/>
+  </properties>
+ </objectgroup>
+ <layer id="8" name="objective_faction_1" width="10" height="10">
+  <data encoding="csv">
+25,25,25,25,25,26,26,26,26,26,
+25,25,25,25,25,26,26,26,26,26,
+25,25,25,25,25,26,26,26,26,26,
+25,25,25,25,26,26,26,26,26,26,
+25,25,25,25,25,26,26,26,26,26,
+25,25,25,25,25,26,26,26,26,26,
+25,25,25,25,25,26,26,26,26,26,
+25,25,25,25,25,26,26,26,26,26,
+25,25,25,25,25,26,26,26,26,26,
+25,25,25,25,25,26,26,26,26,26
+</data>
+ </layer>
+ <layer id="7" name="objective_faction_0" width="10" height="10" visible="0">
+  <data encoding="csv">
+26,26,26,26,26,25,25,25,25,25,
+26,26,26,26,26,25,25,25,25,25,
+26,26,26,26,26,25,25,25,25,25,
+26,26,26,26,26,25,25,25,25,25,
+26,26,26,26,26,25,25,25,25,25,
+26,26,26,26,26,25,25,25,25,25,
+26,26,26,26,26,26,25,25,25,25,
+26,26,26,26,26,25,25,25,25,25,
+26,26,26,26,26,25,25,25,25,25,
+26,26,26,26,26,25,25,25,25,25
+</data>
+ </layer>
+ <layer id="1" name="map" width="10" height="10" opacity="0.45">
+  <data encoding="csv">
+1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1
+</data>
+ </layer>
+ <layer id="6" name="river" width="10" height="10" visible="0">
+  <data encoding="csv">
+17,17,23,17,17,17,17,17,17,17,
+17,23,17,17,17,17,17,17,17,17,
+17,23,17,17,17,17,17,17,17,17,
+23,17,17,17,17,17,17,17,17,17,
+23,17,17,17,17,17,17,17,17,17,
+17,17,17,17,17,17,17,17,17,17,
+17,17,17,17,17,17,17,17,17,17,
+17,17,17,17,17,17,17,17,17,17,
+17,17,17,17,17,17,17,17,17,17,
+17,17,17,17,17,17,17,17,17,17
+</data>
+ </layer>
+ <layer id="3" name="railway" width="10" height="10" visible="0">
+  <data encoding="csv">
+16,16,16,16,16,16,16,16,16,16,
+16,16,16,16,16,16,16,16,16,16,
+16,16,16,16,16,16,16,16,16,16,
+16,16,16,16,16,16,16,16,16,16,
+16,16,16,15,15,16,16,16,16,16,
+16,16,16,16,15,16,16,16,16,16,
+16,16,16,16,16,15,16,16,16,16,
+16,16,16,16,16,15,16,16,16,16,
+16,16,16,16,16,16,15,16,16,16,
+16,16,16,16,16,16,15,16,16,16
+</data>
+ </layer>
+ <layer id="4" name="type" width="10" height="10" visible="0" opacity="0.44">
+  <data encoding="csv">
+11,11,11,11,11,11,11,11,11,11,
+11,11,11,11,11,11,11,14,11,11,
+11,11,11,11,11,11,11,11,11,11,
+11,11,11,11,11,11,11,11,11,11,
+11,11,11,11,11,11,11,11,12,11,
+11,11,11,11,11,11,11,11,12,11,
+11,11,11,11,11,11,11,11,11,11,
+11,11,11,11,11,11,11,11,14,11,
+11,11,11,11,11,11,11,11,11,11,
+11,11,11,11,11,11,13,11,11,11
+</data>
+ </layer>
+ <layer id="2" name="front" width="10" height="10" opacity="0">
+  <data encoding="csv">
+9,9,9,9,9,10,10,10,10,10,
+9,9,9,9,9,10,10,10,10,10,
+9,9,9,9,9,10,10,10,10,10,
+9,9,9,9,9,10,10,10,10,10,
+9,9,9,9,9,10,10,10,10,10,
+9,9,9,9,9,10,10,10,10,10,
+9,9,9,9,9,10,10,10,10,10,
+9,9,9,9,9,10,10,10,10,10,
+9,9,9,9,9,10,10,10,10,10,
+9,9,9,9,9,10,10,10,10,10
+</data>
+ </layer>
+</map>

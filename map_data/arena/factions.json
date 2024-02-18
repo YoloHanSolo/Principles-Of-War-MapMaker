@@ -1,0 +1,32 @@
+{
+    "factions": [
+        {
+            "name": "red",
+            "manpower_points": 10,
+            "manpower_income": 5,
+            "manpower_cap": 15,       
+            "fuel_points": 10,   
+            "fuel_income": 2,   
+            "fuel_cap": 100,
+			"airpower": 0,   
+            "airpower_points": 0,
+			"airpower_income": 0,   
+            "airpower_cap": 0,
+			"units_cap": 25      
+        },
+        { 
+            "name": "blue",
+            "manpower_points": 10,
+            "manpower_income": 5,
+            "manpower_cap": 15,       
+            "fuel_points": 10,   
+            "fuel_income": 2,   
+            "fuel_cap": 100,
+			"airpower": 0,   
+            "airpower_points": 0,
+			"airpower_income": 0,   
+            "airpower_cap": 0,
+			"units_cap": 25      
+        }
+    ]
+}
