@@ -191,7 +191,7 @@ class MapObject:
                     print(f"ERROR: createLandmark: supply: missing parameters")
                     return   
 
-                if kwargs["faction"] not in self.data["factions"]:
+                if kwargs["faction"] != "neutral" and kwargs["faction"] not in self.data["factions"]:
                     print(f"ERROR: createLandmark: supply: faction '{kwargs['faction']}' does not exist")
                     return 
 

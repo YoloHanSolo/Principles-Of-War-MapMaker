@@ -13,15 +13,20 @@ class MapFactory:
 
         self.map = MapObject()
 
-        self.path = f"./map_data/{map_id}/"
+        self.path = f"../mapsData/{map_id}/"
 
         try: 
             self.tree_root = ElementTree.parse(self.path + "map.tmx").getroot()
         except:
-            print(f"ERROR: error when parsing ./map_data/{map_id}/map.tmx")
+            print(f"ERROR: error when parsing ../mapsData/{map_id}/map.tmx")
             exit()
 
-        metadata = self.getXmlElement("objectgroup", "metadata").find("properties")
+        try:
+            metadata = self.getXmlElement("objectgroup", "metadata").find("properties")
+        except:
+            print(f"ERROR: missing or invalid 'metadata' layer in ../mapsData/{map_id}/map.tmx")
+            exit()
+
         factions_data = load(open(self.path + "factions.json")) 
         unit_types = load(open(self.path + "unit_types.json", 'r'))
         units_data = load(open(self.path + "units.json")) 
@@ -44,7 +49,6 @@ class MapFactory:
         self.map.createMetadata(creator=self.getXmlProperties(metadata, "creator"))
         self.map.createMetadata(width=int(self.tree_root.attrib["width"]))
         self.map.createMetadata(height=int(self.tree_root.attrib["height"]))
-        self.map.createMetadata(timestamp=int(time()))
         self.map.createMetadata(type="original")
 
         self.map.createTime(**time_data)
@@ -87,6 +91,7 @@ class MapFactory:
 
         hash = md5(dumps(self.map.data, sort_keys=True).encode('utf8')).hexdigest()
         self.map.createMetadata(hash=hash)
+        self.map.createMetadata(timestamp=int(time()))
 
     def getXmlProperties(self, properties, key):
         for property in properties.findall('property'):
@@ -207,12 +212,12 @@ if __name__ == "__main__":
     else:
         map_id = argv[1]
 
-    if map_id not in listdir("./map_data"):
+    if map_id not in listdir("../mapsData"):
         print(f"ERROR: invalid map id '{map_id}'")
         exit()
 
     map_factory = MapFactory(map_id)
     filename = map_factory.map.data["metadata"]["filename"]
-    with open("./maps/" + filename, 'w+') as file:
+    with open("../maps/" + filename, 'w+') as file:
         dump(map_factory.map.data, file)
-        print(f"INFO: output './maps/{filename}")
+        print(f"INFO: output '../maps/{filename}")

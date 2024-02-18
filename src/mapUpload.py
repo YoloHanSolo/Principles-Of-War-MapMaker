@@ -38,12 +38,12 @@ if __name__ == "__main__":
 
     map_id = input("Enter map_id: ")
     map_filename = map_id + ".json"
-    if map_filename not in listdir("./maps"):
+    if map_filename not in listdir("../maps"):
         print(f"ERROR: invalid map id '{map_id}'")
         exit()
 
     try:
-        with open(f"./maps/{map_filename}", "rb") as file:
+        with open(f"../maps/{map_filename}", "rb") as file:
             response = put(
                 url=f"http://{SERVER_URL}/maps/upload",
                 data=file,
@@ -64,7 +64,7 @@ if __name__ == "__main__":
                 print("ERROR: unsupported media type 415")
                 exit()
     except:
-        print(f"ERROR: could not open file './maps/{map_filename}'")
+        print(f"ERROR: could not open file '../maps/{map_filename}'")
         exit()        
 
     exit()  

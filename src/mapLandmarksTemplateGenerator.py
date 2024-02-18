@@ -1,7 +1,7 @@
 from json import dump
 from xml.etree import ElementTree
 from sys import argv, exit
-from os import listdir
+from os import listdir, path
 
 
 if __name__ == "__main__":
@@ -11,16 +11,20 @@ if __name__ == "__main__":
     else:
         map_id = argv[1]
 
-    if map_id not in listdir("./map_data"):
+    if map_id not in listdir("../mapsData"):
         print(f"ERROR: invalid map id '{map_id}'")
+        exit()
+
+    if path.exists(f"../mapsData/{map_id}/landmarks.json"):
+        print(f"ERROR: '../mapsData/{map_id}/landmarks.json' already exists")
         exit()
 
     tree_root = None
     try: 
-        tree_root =  ElementTree.parse(map_id + f"./map_data/map.tmx").getroot()
+        tree_root =  ElementTree.parse(f"../mapsData/{map_id}/map.tmx").getroot()
     except:
-            print(f"ERROR: error when parsing ./map_data/{map_id}/map.tmx")
-            exit()
+        print(f"ERROR: error when parsing '../mapsData/{map_id}/map.tmx'")
+        exit()
 
     xml_element = None
     for child in tree_root:
@@ -68,8 +72,10 @@ if __name__ == "__main__":
                             "production": 0
                         })
     except:
-        print(f"ERROR: failed to create hexagons_types.json template")
+        print(f"ERROR: failed to create landmarks.json template")
         exit()    
 
-    with open(f"./map_data/{map_id}/hexagons_types.json", 'w+') as file:
+    with open(f"../mapsData/{map_id}/landmarks.json", 'w+') as file:
         dump(output, file)
+
+    print(f"INFO: template generated '../mapsData/{map_id}/landmarks.json'")

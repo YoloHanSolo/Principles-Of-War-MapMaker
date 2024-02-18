@@ -10,10 +10,10 @@
  <tileset firstgid="8" source="../../resources/tsx/faction_n.tsx"/>
  <tileset firstgid="9" source="../../resources/tsx/faction_0.tsx"/>
  <tileset firstgid="10" source="../../resources/tsx/faction_1.tsx"/>
- <tileset firstgid="11" source="../../resources/tsx/type_default.tsx"/>
- <tileset firstgid="12" source="../../resources/tsx/type_city.tsx"/>
- <tileset firstgid="13" source="../../resources/tsx/type_depot.tsx"/>
- <tileset firstgid="14" source="../../resources/tsx/type_oilfield.tsx"/>
+ <tileset firstgid="11" source="../../resources/tsx/landmark_default.tsx"/>
+ <tileset firstgid="12" source="../../resources/tsx/landmark_city.tsx"/>
+ <tileset firstgid="13" source="../../resources/tsx/landmark_depot.tsx"/>
+ <tileset firstgid="14" source="../../resources/tsx/landmark_oilfield.tsx"/>
  <tileset firstgid="15" source="../../resources/tsx/railway_1.tsx"/>
  <tileset firstgid="16" source="../../resources/tsx/railway_0.tsx"/>
  <tileset firstgid="17" source="../../resources/tsx/river_0.tsx"/>
