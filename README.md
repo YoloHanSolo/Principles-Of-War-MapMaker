@@ -9,6 +9,7 @@ For creating maps we use a combination of Tiled map maker software, data stored 
 1. **Tiled**: For creating maps layers such as terrain we use free software [Tiled Level Editor](https://www.mapeditor.org/).
 2. **Json Files**: You can edit .json files with any text editor. We use [VSCode](https://code.visualstudio.com/download).
 3. **PNG Icons**: Use any tool that can create transparent background. We use [Paint.NET](https://www.getpaint.net/download.html).
+4. **Python3**: You need to have [Python3](https://www.python.org/downloads/) installed on your OS and install packages that are listed in './requirements.txt'.
 
 ## Required Files
 
