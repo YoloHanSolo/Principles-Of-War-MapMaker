@@ -57,10 +57,10 @@ class MapFactory:
         for faction in factions_data.values():
             self.map.createFaction(**faction)
 
-        for filename in listdir(self.path + "unit_icons"):
+        for filename in listdir(self.path + "unitIcons"):
             if not filename.endswith(".png"):
                 continue
-            with open(self.path + "unit_icons/" + filename, "rb") as icon:
+            with open(self.path + "unitIcons/" + filename, "rb") as icon:
                 icon_binary = icon.read()
                 self.map.createUnitIcon(filename[:-4], b64encode(icon_binary).decode('utf-8'))
         

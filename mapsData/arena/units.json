@@ -1,76 +1,74 @@
-{
-	"units": [
-		{
-			"x": 16,
-			"y": 5,
-			"faction": "red",
-			"type": "red_infantry",
-			"attack": 1,
-			"defense": 2,
-			"movement": 2
-		},
-		{
-			"x": 15,
-			"y": 8,
-			"faction": "red",
-			"type": "red_infantry",
-			"attack": 1,
-			"defense": 2,
-			"movement": 2
-		},
-		{
-			"x": 16,
-			"y": 10,
-			"faction": "red",
-			"type": "red_infantry",
-			"attack": 1,
-			"defense": 2,
-			"movement": 2
-		},
-		{
-			"x": 19,
-			"y": 7,
-			"faction": "red",
-			"type": "red_fortification",
-			"attack": 0,
-			"defense": 1,
-			"movement": 0
-		},
-		{
-			"x": 24,
-			"y": 7,
-			"faction": "blue",
-			"type": "blue_infantry",
-			"attack": 1,
-			"defense": 2,
-			"movement": 2
-		},
-		{
-			"x": 23,
-			"y": 5,
-			"faction": "blue",
-			"type": "blue_infantry",
-			"attack": 1,
-			"defense": 2,
-			"movement": 2
-		},
-		{
-			"x": 23,
-			"y": 10,
-			"faction": "blue",
-			"type": "blue_infantry",
-			"attack": 1,
-			"defense": 2,
-			"movement": 2
-		},
-				{
-			"x": 20,
-			"y": 8,
-			"faction": "blue",
-			"type": "blue_fortification",
-			"attack": 0,
-			"defense": 1,
-			"movement": 0
-		}
-	]
-}
+[
+	{
+		"x": 16,
+		"y": 5,
+		"faction": "red",
+		"unit_type": "red_infantry",
+		"attack": 1,
+		"defense": 2,
+		"movement": 2
+	},
+	{
+		"x": 15,
+		"y": 8,
+		"faction": "red",
+		"unit_type": "red_infantry",
+		"attack": 1,
+		"defense": 2,
+		"movement": 2
+	},
+	{
+		"x": 16,
+		"y": 10,
+		"faction": "red",
+		"unit_type": "red_infantry",
+		"attack": 1,
+		"defense": 2,
+		"movement": 2
+	},
+	{
+		"x": 19,
+		"y": 7,
+		"faction": "red",
+		"unit_type": "red_fortification",
+		"attack": 0,
+		"defense": 1,
+		"movement": 0
+	},
+	{
+		"x": 24,
+		"y": 7,
+		"faction": "blue",
+		"unit_type": "blue_infantry",
+		"attack": 1,
+		"defense": 2,
+		"movement": 2
+	},
+	{
+		"x": 23,
+		"y": 5,
+		"faction": "blue",
+		"unit_type": "blue_infantry",
+		"attack": 1,
+		"defense": 2,
+		"movement": 2
+	},
+	{
+		"x": 23,
+		"y": 10,
+		"faction": "blue",
+		"unit_type": "blue_infantry",
+		"attack": 1,
+		"defense": 2,
+		"movement": 2
+	},
+			{
+		"x": 20,
+		"y": 8,
+		"faction": "blue",
+		"unit_type": "blue_fortification",
+		"attack": 0,
+		"defense": 1,
+		"movement": 0
+	}
+]

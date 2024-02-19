@@ -1,36 +1,30 @@
 {
-    "factions": [
-        {
-            "name": "russia",
-            "manpower_points": 4,
-            "manpower_income": 1.5,
-            "manpower_cap": 20,       
-            "fuel_points": 750,   
-            "fuel_income": 5,   
-            "fuel_cap": 1500,
-			"airpower": 8,   
-            "airpower_points": 0,
-			"airpower_income": 0.28,   
-            "airpower_cap": 12,
-			"units_cap": 80,
-            "unit_text_color_top": [255, 255, 255],
-            "unit_text_color_bot": [255, 255, 255]
-        },
-        { 
-            "name": "ukraine",
-            "manpower_points": 11,
-            "manpower_income": 5.5,
-            "manpower_cap": 40,
-            "fuel_points": 400,   
-            "fuel_income": 15,   
-            "fuel_cap": 2500,   
-            "airpower": 1,   
-			"airpower_points": 0.5,
-            "airpower_income": 0.34,   
-            "airpower_cap": 20,
-			"units_cap": 150,
-            "unit_text_color_top": [255, 255, 255],
-            "unit_text_color_bot": [0, 0, 0]
-        }
-    ]
+    "russia": {
+        "id": "faction_0",
+        "name": "russia",
+        "manpower_points": 4,
+        "manpower_income": 1.5,
+        "manpower_cap": 20,       
+        "fuel_points": 750,   
+        "fuel_income": 5,   
+        "fuel_cap": 1500,
+        "airpower_points": 0,
+        "airpower_income": 0.28,   
+        "airpower_cap": 12,
+        "units_cap": 80
+    },
+    "ukraine": { 
+        "id": "faction_1",
+        "name": "ukraine",
+        "manpower_points": 11,
+        "manpower_income": 5.5,
+        "manpower_cap": 40,
+        "fuel_points": 400,   
+        "fuel_income": 15,   
+        "fuel_cap": 2500,     
+        "airpower_points": 0.5,
+        "airpower_income": 0.34,   
+        "airpower_cap": 20,
+        "units_cap": 150
+    }
 }

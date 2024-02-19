@@ -1,9 +1,7 @@
 {
-    "time": {
-        "day": 1,
-        "month": 1,
-        "year": 2023,
-        "increment": 1,
-		"seasons": {}
-    }
+    "day": 1,
+    "month": 1,
+    "year": 2023,
+    "increment": 1,
+    "seasons": {}
 }
