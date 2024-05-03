@@ -1,0 +1,38 @@
+[
+	{
+		"x": 4,
+		"y": 4,
+		"faction": "faction_0",
+		"unit_type": "faction_0_unit",
+		"attack": 4,
+		"defense": 4,
+		"movement": 4
+	},
+	{
+		"x": 5,
+		"y": 5,
+		"faction": "faction_1",
+		"unit_type": "faction_1_unit",
+		"attack": 4,
+		"defense": 4,
+		"movement": 4
+	},
+	{
+		"x": 4,
+		"y": 5,
+		"faction": "faction_0",
+		"unit_type": "faction_0_leader",
+		"attack": 0,
+		"defense": 1,
+		"movement": 1
+	},
+	{
+		"x": 5,
+		"y": 4,
+		"faction": "faction_1",
+		"unit_type": "faction_1_leader",
+		"attack": 0,
+		"defense": 1,
+		"movement": 1
+	}
+]

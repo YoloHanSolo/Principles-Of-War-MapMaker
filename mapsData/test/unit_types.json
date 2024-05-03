@@ -1,0 +1,58 @@
+{
+    "faction_0_unit": {
+        "id": "faction_0_unit",
+        "name": "Faction 0 Unit",
+        "description": "",
+        "faction": "faction_0",
+        "branch": "infantry",
+        "icon": "unit_0",
+        "attack": 4,
+        "defense": 4,
+        "movement": 4,
+        "cost": 0,
+        "fuel_consumption": 0,
+        "frequency": 1
+    },
+    "faction_0_leader": {
+        "id": "faction_0_leader",
+        "name": "Faction 0 Leader",
+        "description": "",
+        "faction": "faction_0",
+        "branch": "leader",
+        "icon": "leader_0",
+        "attack": 0,
+        "defense": 1,
+        "movement": 1,
+        "cost": 0,
+        "fuel_consumption": 0,
+        "frequency": 0
+    },
+    "faction_1_unit": {
+        "id": "faction_1_unit",
+        "name": "Faction 1 Unit",
+        "description": "",
+        "faction": "faction_1",
+        "branch": "infantry",
+        "icon": "unit_1",
+        "attack": 4,
+        "defense": 4,
+        "movement": 4,
+        "cost": 0,
+        "fuel_consumption": 0,
+        "frequency": 1
+    },
+    "faction_1_leader": {
+        "id": "faction_1_leader",
+        "name": "Faction 1 Leader",
+        "description": "",
+        "faction": "faction_1",
+        "branch": "leader",
+        "icon": "leader_1",
+        "attack": 0,
+        "defense": 1,
+        "movement": 1,
+        "cost": 0,
+        "fuel_consumption": 0,
+        "frequency": 0
+    }
+}

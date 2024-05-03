@@ -1,4 +1,32 @@
 {
+    "soviet_leader": {
+        "id": "soviet_leader",
+        "name": "Joseph Stalin",
+        "description": "",
+        "faction": "soviet",
+        "branch": "leader",
+        "icon": "soviet_leader",
+        "attack": 0,
+        "defense": 1,
+        "movement": 1,
+        "cost": 0,
+        "fuel_consumption": 0,
+        "frequency": 0     
+    },
+    "german_leader": {
+        "id": "german_leader",
+        "name": "Adolf Hitler",
+        "description": "",
+        "faction": "axis",
+        "branch": "leader",
+        "icon": "german_leader",
+        "attack": 0,
+        "defense": 1,
+        "movement": 1,
+        "cost": 0,
+        "fuel_consumption": 0,
+        "frequency": 0     
+    },
     "finnish_infantry": {
         "id": "finnish_infantry",
         "name": "Finnish Infantry",

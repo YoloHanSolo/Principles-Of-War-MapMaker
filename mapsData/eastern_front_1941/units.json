@@ -1,5 +1,14 @@
 [
 	{
+		"x": 4,
+		"y": 18,
+		"faction": "axis",
+		"unit_type": "german_leader",
+		"attack": 0,
+		"defense": 1,
+		"movement": 1
+	},
+	{
 		"x": 19,
 		"y": 16,
 		"faction": "axis",
@@ -385,6 +394,15 @@
 		"attack": 0,
 		"defense": 3,
 		"movement": 0
+	},
+	{
+		"x": 42,
+		"y": 17,
+		"faction": "soviet",
+		"unit_type": "soviet_leader",
+		"attack": 0,
+		"defense": 1,
+		"movement": 1
 	},
 	{
 		"x": 25,

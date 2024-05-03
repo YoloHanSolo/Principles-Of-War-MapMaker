@@ -54,7 +54,7 @@ class MapObject:
             print(f"ERROR: createUnitType: faction '{faction}' does not exist")
             return 
 
-        if branch not in ["fortification", "infantry", "mechanized", "naval", "light_infantry"]:
+        if branch not in ["fortification", "infantry", "mechanized", "naval", "light_infantry", "leader"]:
             print(f"ERROR: createUnitType: invalid branch '{branch}'")
             return
         
@@ -206,8 +206,24 @@ class MapObject:
             
     def createTime(self, day, month, year, increment, seasons=None):
         if not seasons:
-            print(f"WARNING: createTime: seasons missing")
-            return    
+            print(f"WARNING: createTime: seasons missing")    
+        else:
+            try: 
+                for key, value in seasons.items():
+                    day, month = key.split("-")
+                    if not (1 <= int(day) <= 31):
+                        raise
+                    if not (1 <= int(month) <= 12):
+                        raise
+                    for key2, value2 in value.items():
+                        if key2 not in ["grass", "sand", "mountain", "water", "mud", "snow", "forest"]:
+                            raise
+                        if not ("probability" in value2 and "to" in value2):
+                            raise
+            except:
+                print(f"ERROR: createTime: invalid seasons data")
+                seasons=None
+
 
         self.data["time"] = {
             "day": day,

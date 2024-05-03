@@ -161,9 +161,9 @@ class MapFactory:
     def getRailwayByValue(self, value):
         match value:
             case 0:
-                return False   
+                return True   
             case 1:
-                return True
+                return False
             case _:
                 print(f"ERROR: getRailwayByValue: invalid railway value {value}")
 
