@@ -1,3 +1,6 @@
+from typeEnums import UnitType, TerrainType, LandmarkType
+
+
 class MapObject:
 
     def __init__(self) -> None:
@@ -11,7 +14,7 @@ class MapObject:
                 "height": 0,
                 "timestamp": "",
                 "creator": "",
-                "version": 2,
+                "version": "",
                 "type": ""
             },
             "factions": {},
@@ -54,7 +57,7 @@ class MapObject:
             print(f"ERROR: createUnitType: faction '{faction}' does not exist")
             return 
 
-        if branch not in ["fortification", "infantry", "mechanized", "naval", "light_infantry", "leader"]:
+        if branch not in {unit_type.value for unit_type in UnitType}:
             print(f"ERROR: createUnitType: invalid branch '{branch}'")
             return
         
@@ -155,12 +158,12 @@ class MapObject:
             print(f"ERROR: createLandmark: landmark coordinate y '{y}' out of bounds")
             return
         
-        if landmark_type not in ["city", "oilfield", "supply"]:
+        if landmark_type not in {landmark_type.value for landmark_type in LandmarkType}:
             print(f"ERROR: createLandmark: invalid landmark type '{landmark_type}'")
             return
 
         match landmark_type:
-            case "city":
+            case LandmarkType.CITY.value:
                 if "faction" not in kwargs or "name" not in kwargs or "population" not in kwargs:
                     print(f"ERROR: createLandmark: city: missing parameters")
                     return                     
@@ -176,7 +179,7 @@ class MapObject:
                     "faction": kwargs["faction"],
                     "population": kwargs["population"]
                 })
-            case "oilfield":
+            case LandmarkType.OILFIELD.value:
                 if "production" not in kwargs:
                     print(f"ERROR: createLandmark: oilfield: missing parameters")
                     return   
@@ -186,7 +189,7 @@ class MapObject:
                     "y": y,
                     "production": kwargs["production"],
                 })                
-            case "supply":
+            case LandmarkType.SUPPLY.value:
                 if "faction" not in kwargs:
                     print(f"ERROR: createLandmark: supply: missing parameters")
                     return   
@@ -216,7 +219,7 @@ class MapObject:
                     if not (1 <= int(month) <= 12):
                         raise
                     for key2, value2 in value.items():
-                        if key2 not in ["grass", "sand", "mountain", "water", "mud", "snow", "forest"]:
+                        if key2 not in {terrain_type.value for terrain_type in TerrainType}:
                             raise
                         if not ("probability" in value2 and "to" in value2):
                             raise
@@ -245,7 +248,7 @@ class MapObject:
             objective_f0=False, 
             objective_f1=False):
 
-        if terrain not in ["grass", "sand", "mountain", "water", "mud", "snow", "forest"]:
+        if terrain not in {terrain_type.value for terrain_type in TerrainType}:
             print(f"ERROR: createHexagon: invalid terrain '{terrain}'")
             return 
 
@@ -253,7 +256,7 @@ class MapObject:
             print(f"ERROR: createHexagon: faction '{faction}' does not exist")
             return 
 
-        if landmark_type not in ["default", "city", "oilfield", "supply"]:
+        if landmark_type not in {landmark_type.value for landmark_type in LandmarkType}:
             print(f"ERROR: createHexagon: invalid landmark type '{landmark_type}'")
             return 
 
