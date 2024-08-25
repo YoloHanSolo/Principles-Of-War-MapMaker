@@ -213,10 +213,10 @@ class MapObject:
         else:
             try: 
                 for key, value in seasons.items():
-                    day, month = key.split("-")
-                    if not (1 <= int(day) <= 31):
+                    season_day, season_month = key.split("-")
+                    if not (1 <= int(season_day) <= 31):
                         raise
-                    if not (1 <= int(month) <= 12):
+                    if not (1 <= int(season_month) <= 12):
                         raise
                     for key2, value2 in value.items():
                         if key2 not in {terrain_type.value for terrain_type in TerrainType}:
