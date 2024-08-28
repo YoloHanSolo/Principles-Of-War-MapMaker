@@ -53,7 +53,7 @@ if __name__ == "__main__":
                 })
             
             if response.status_code == 200:
-                print(f"INFO: {response.json()['message']}")
+                print(f"INFO: success 200")
             elif response.status_code == 400:
                 print("ERROR: web server response 400")
                 exit()
