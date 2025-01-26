@@ -15,7 +15,8 @@ class MapObject:
                 "timestamp": "",
                 "creator": "",
                 "version": "",
-                "type": ""
+                "type": "",
+                "description": "",
             },
             "factions": {},
             "hexagons": [],
