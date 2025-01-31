@@ -1,0 +1,19 @@
+{
+	"city": [
+		{
+			"x": 0,
+			"y": 9,
+			"name": "Red Capital",
+			"faction": "red",
+			"population": 1
+		}
+	],
+	"supply": [
+		{
+			"x": 0,
+			"y": 10,
+			"faction": "red"
+		}
+	],
+	"oilfield": []
+}
