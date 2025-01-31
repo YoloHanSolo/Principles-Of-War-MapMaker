@@ -7,6 +7,9 @@ from hashlib import md5
 from xml.etree import ElementTree
 from mapObject import MapObject
 
+cy = None
+cx = None
+
 class MapFactory:
 
     def __init__(self, map_id):
@@ -72,6 +75,10 @@ class MapFactory:
 
         for y in range(self.map.data["metadata"]["height"]):
             for x in range(self.map.data["metadata"]["width"]):
+                global cx
+                global cy
+                cx = x
+                cy = y
                 self.map.createHexagon(x, y,
                     self.getTerrainByValue(terrain_data[y][x]),
                     self.getFactionByValue(front_data[y][x]),
@@ -128,7 +135,7 @@ class MapFactory:
             case 6:
                 return "forest"
             case _:
-                print(f"ERROR: getTerrainByValue: invalid terrain value {value}")
+                print(f"ERROR: getTerrainByValue: invalid terrain value {value} (y={cy}, x={cx})")
 
     def getFactionByValue(self, value):
         match value:
@@ -143,7 +150,7 @@ class MapFactory:
                     if dict_value.get("id") == "faction_1":
                         return dict_value.get("name")
             case _:
-                print(f"ERROR: getFactionByValue: invalid faction value {value}")
+                print(f"ERROR: getFactionByValue: invalid faction value {value} (y={cy}, x={cx})")
 
     def getLandmarkByValue(self, value):
         match value:
@@ -156,7 +163,7 @@ class MapFactory:
             case 3:
                 return "oilfield"
             case _:
-                print(f"ERROR: getLandmarkByValue: invalid landmark value {value}")
+                print(f"ERROR: getLandmarkByValue: invalid landmark value {value} (y={cy}, x={cx})")
 
     def getRailwayByValue(self, value):
         match value:
@@ -165,7 +172,7 @@ class MapFactory:
             case 1:
                 return False
             case _:
-                print(f"ERROR: getRailwayByValue: invalid railway value {value}")
+                print(f"ERROR: getRailwayByValue: invalid railway value {value} (y={cy}, x={cx})")
 
     def getRiverByValue(self, value):
         match value:
@@ -186,7 +193,7 @@ class MapFactory:
             case 7:
                 return [True, True, True, False, False, False]
             case _:
-                print(f"ERROR: getRiverByValue: invalid river value {value}")
+                print(f"ERROR: getRiverByValue: invalid river value {value} (y={cy}, x={cx})")
 
     def getObjectiveByValue(self, value):
         match value:
@@ -195,7 +202,7 @@ class MapFactory:
             case 1:
                 return True
             case _:
-                print(f"ERROR: getObjectiveByValue: invalid objective value {value}")
+                print(f"ERROR: getObjectiveByValue: invalid objective value {value} (y={cy}, x={cx})")
 
     def getPortByValue(self, value):
         match value:
@@ -204,7 +211,7 @@ class MapFactory:
             case 1:
                 return True
             case _:
-                print(f"ERROR: getPortByValue: invalid port value {value}")
+                print(f"ERROR: getPortByValue: invalid port value {value} (y={cy}, x={cx})")
 
 if __name__ == "__main__":
     if len(argv) == 1:

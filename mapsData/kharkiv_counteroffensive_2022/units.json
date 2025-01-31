@@ -1,11 +1,2 @@
 [
-	{
-		"x": 16,
-		"y": 5,
-		"faction": "red",
-		"unit_type": "red_infantry",
-		"attack": 1,
-		"defense": 2,
-		"movement": 2
-	}
 ]
