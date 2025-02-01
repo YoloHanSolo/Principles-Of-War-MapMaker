@@ -1,5 +1,199 @@
 {
-	"city": [],
-	"supply": [],
+	"city": [
+		{
+			"x": 19,
+			"y": 25,
+			"name": "Chuhuiv",
+			"faction": "ukraine",
+			"population": 0
+		},
+		{
+			"x": 10,
+			"y": 36,
+			"name": "Pervomaiskyi",
+			"faction": "ukraine",
+			"population": 0
+		},
+		{
+			"x": 12,
+			"y": 20,
+			"name": "Kharkiv",
+			"faction": "ukraine",
+			"population": 0
+		},
+		{
+			"x": 34,
+			"y": 54,
+			"name": "Kramatorsk",
+			"faction": "ukraine",
+			"population": 0
+		},
+		{
+			"x": 33,
+			"y": 51,
+			"name": "Sloviansk",
+			"faction": "ukraine",
+			"population": 0
+		},
+
+		{
+			"x": 23,
+			"y": 13,
+			"name": "Volchansk",
+			"faction": "russia",
+			"population": 0
+		},
+		{
+			"x": 47,
+			"y": 48,
+			"name": "Rubezhnoye",
+			"faction": "russia",
+			"population": 0
+		},
+		{
+			"x": 44,
+			"y": 47,
+			"name": "Kremennaya",
+			"faction": "russia",
+			"population": 0
+		},
+		{
+			"x": 47,
+			"y": 50,
+			"name": "Lysychansk",
+			"faction": "russia",
+			"population": 0
+		},
+		{
+			"x": 48,
+			"y": 49,
+			"name": "Severodonetsk",
+			"faction": "russia",
+			"population": 0
+		},
+		{
+			"x": 35,
+			"y": 47,
+			"name": "Lyman",
+			"faction": "russia",
+			"population": 0
+		},
+		{
+			"x": 35,
+			"y": 38,
+			"name": "Borova",
+			"faction": "russia",
+			"population": 0
+		},
+		{
+			"x": 28,
+			"y": 42,
+			"name": "Izium",
+			"faction": "russia",
+			"population": 0
+		},
+		{
+			"x": 21,
+			"y": 35,
+			"name": "Balakliia",
+			"faction": "russia",
+			"population": 0
+		},
+		{
+			"x": 24,
+			"y": 37,
+			"name": "Savyntsi",
+			"faction": "russia",
+			"population": 0
+		},
+		{
+			"x": 18,
+			"y": 3,
+			"name": "Kupiansk",
+			"faction": "russia",
+			"population": 0
+		},
+		{
+			"x": 26,
+			"y": 29,
+			"name": "Shevchenkove",
+			"faction": "russia",
+			"population": 0
+		},
+		{
+			"x": 18,
+			"y": 3,
+			"name": "Belgorod",
+			"faction": "russia",
+			"population": 0
+		}
+	],
+	"supply": [
+		{
+			"x": 0,
+			"y": 20,
+			"faction": "ukraine"
+		},
+		{
+			"x": 0,
+			"y": 38,
+			"faction": "ukraine"
+		},
+		{
+			"x": 0,
+			"y": 47,
+			"faction": "ukraine"
+		},
+		{
+			"x": 6,
+			"y": 54,
+			"faction": "ukraine"
+		},
+		{
+			"x": 10,
+			"y": 18,
+			"faction": "ukraine"
+		},
+		{
+			"x": 11,
+			"y": 22,
+			"faction": "ukraine"
+		},
+		{
+			"x": 33,
+			"y": 53,
+			"faction": "ukraine"
+		},
+		{
+			"x": 19,
+			"y": 3,
+			"faction": "russia"
+		},
+		{
+			"x": 23,
+			"y": 12,
+			"faction": "russia"
+		},
+		{
+			"x": 33,
+			"y": 53,
+			"faction": "russia"
+		},	
+		{
+			"x": 35,
+			"y": 30,
+			"faction": "russia"
+		},
+		{
+			"x": 44,
+			"y": 37,
+			"faction": "russia"
+		},
+		{
+			"x": 49,
+			"y": 51,
+			"faction": "russia"
+		}
+	],
 	"oilfield": []
 }

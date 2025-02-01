@@ -6,6 +6,7 @@ from time import time
 from hashlib import md5
 from xml.etree import ElementTree
 from mapObject import MapObject
+from inquirer import List, prompt
 
 cy = None
 cx = None
@@ -215,7 +216,15 @@ class MapFactory:
 
 if __name__ == "__main__":
     if len(argv) == 1:
-        map_id = input("Enter map_id: ")
+        #map_id = input("Enter map_id: ")
+        answers = prompt([
+            List(
+                "map_id",
+                message="Select map:",
+                choices=listdir("../mapsData"),
+            )
+        ])
+        map_id = answers["map_id"]
     else:
         map_id = argv[1]
 

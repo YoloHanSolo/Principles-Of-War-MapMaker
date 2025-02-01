@@ -1,6 +1,6 @@
 {
     "russia": {
-        "id": "faction_0",
+        "id": "faction_1",
         "name": "russia",
         "manpower_points": 1,
         "manpower_income": 0.25,
@@ -14,7 +14,7 @@
         "units_cap": 50
     },
     "ukraine": { 
-        "id": "faction_1",
+        "id": "faction_0",
         "name": "ukraine",
         "manpower_points": 3,
         "manpower_income": 0.5,
