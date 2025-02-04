@@ -1,5 +1,507 @@
 [
   {
+		"x": 21,
+		"y": 45,
+		"faction": "ukraine",
+		"unit_type": "ukrainian_fortifification",
+		"attack": 0,
+		"defense": 1,
+		"movement": 0
+	},
+  {
+		"x": 26,
+		"y": 47,
+		"faction": "ukraine",
+		"unit_type": "ukrainian_fortifification",
+		"attack": 0,
+		"defense": 1,
+		"movement": 0
+	},
+  {
+		"x": 30,
+		"y": 48,
+		"faction": "ukraine",
+		"unit_type": "ukrainian_fortifification",
+		"attack": 0,
+		"defense": 1,
+		"movement": 0
+	},
+  {
+		"x": 34,
+		"y": 50,
+		"faction": "ukraine",
+		"unit_type": "ukrainian_fortifification",
+		"attack": 0,
+		"defense": 1,
+		"movement": 0
+	},
+  {
+		"x": 35,
+		"y": 51,
+		"faction": "ukraine",
+		"unit_type": "ukrainian_fortifification",
+		"attack": 0,
+		"defense": 1,
+		"movement": 0
+	},
+	{
+		"x": 38,
+		"y": 50,
+		"faction": "ukraine",
+		"unit_type": "ukrainian_fortifification",
+		"attack": 0,
+		"defense": 1,
+		"movement": 0
+	},
+	{
+		"x": 44,
+		"y": 52,
+		"faction": "ukraine",
+		"unit_type": "ukrainian_fortifification",
+		"attack": 0,
+		"defense": 2,
+		"movement": 0
+	},
+	{
+		"x": 20,
+		"y": 33,
+		"faction": "ukraine",
+		"unit_type": "ukrainian_fortifification",
+		"attack": 0,
+		"defense": 1,
+		"movement": 0
+	},
+	{
+		"x": 23,
+		"y": 24,
+		"faction": "ukraine",
+		"unit_type": "ukrainian_fortifification",
+		"attack": 0,
+		"defense": 1,
+		"movement": 0
+	},
+	{
+		"x": 10,
+		"y": 13,
+		"faction": "ukraine",
+		"unit_type": "ukrainian_fortifification",
+		"attack": 0,
+		"defense": 1,
+		"movement": 0
+	},
+	{
+		"x": 12,
+		"y": 14,
+		"faction": "ukraine",
+		"unit_type": "ukrainian_fortifification",
+		"attack": 0,
+		"defense": 1,
+		"movement": 0
+	},
+	{
+		"x": 4,
+		"y": 9,
+		"faction": "ukraine",
+		"unit_type": "ukrainian_fortifification",
+		"attack": 0,
+		"defense": 1,
+		"movement": 0
+	},
+	{
+		"x": 1,
+		"y": 8,
+		"faction": "ukraine",
+		"unit_type": "ukrainian_fortifification",
+		"attack": 0,
+		"defense": 1,
+		"movement": 0
+	},
+
+	{
+		"x": 23,
+		"y": 24,
+		"faction": "ukraine",
+		"unit_type": "ukrainian_mechanized_infantry",
+		"attack": 2,
+		"defense": 2,
+		"movement": 4
+	},
+	{
+		"x": 20,
+		"y": 37,
+		"faction": "ukraine",
+		"unit_type": "ukrainian_mechanized_infantry",
+		"attack": 2,
+		"defense": 2,
+		"movement": 4
+	},
+	{
+		"x": 20,
+		"y": 34,
+		"faction": "ukraine",
+		"unit_type": "ukrainian_mechanized_infantry",
+		"attack": 2,
+		"defense": 2,
+		"movement": 4
+	},
+	{
+		"x": 21,
+		"y": 27,
+		"faction": "ukraine",
+		"unit_type": "ukrainian_mechanized_infantry",
+		"attack": 2,
+		"defense": 2,
+		"movement": 4
+	},
+	{
+		"x": 26,
+		"y": 48,
+		"faction": "ukraine",
+		"unit_type": "ukrainian_mechanized_infantry",
+		"attack": 2,
+		"defense": 2,
+		"movement": 4
+	},
+	{
+		"x": 29,
+		"y": 48,
+		"faction": "ukraine",
+		"unit_type": "ukrainian_mechanized_infantry",
+		"attack": 2,
+		"defense": 2,
+		"movement": 4
+	},
+	{
+		"x": 20,
+		"y": 34,
+		"faction": "ukraine",
+		"unit_type": "ukrainian_mechanized_infantry",
+		"attack": 2,
+		"defense": 2,
+		"movement": 4
+	},
+	{
+		"x": 20,
+		"y": 33,
+		"faction": "ukraine",
+		"unit_type": "ukrainian_mechanized_infantry",
+		"attack": 2,
+		"defense": 2,
+		"movement": 4
+	},
+
+	{
+		"x": 21,
+		"y": 43,
+		"faction": "ukraine",
+		"unit_type": "ukrainian_territorial_defense",
+		"attack": 1,
+		"defense": 1,
+		"movement": 2
+	},
+	{
+		"x": 22,
+		"y": 40,
+		"faction": "ukraine",
+		"unit_type": "ukrainian_territorial_defense",
+		"attack": 1,
+		"defense": 1,
+		"movement": 2
+	},
+	{
+		"x": 24,
+		"y": 38,
+		"faction": "ukraine",
+		"unit_type": "ukrainian_territorial_defense",
+		"attack": 1,
+		"defense": 1,
+		"movement": 2
+	},
+	{
+		"x": 15,
+		"y": 16,
+		"faction": "ukraine",
+		"unit_type": "ukrainian_territorial_defense",
+		"attack": 1,
+		"defense": 1,
+		"movement": 2
+	},
+	{
+		"x": 14,
+		"y": 16,
+		"faction": "ukraine",
+		"unit_type": "ukrainian_territorial_defense",
+		"attack": 1,
+		"defense": 1,
+		"movement": 2
+	},
+	{
+		"x": 14,
+		"y": 16,
+		"faction": "ukraine",
+		"unit_type": "ukrainian_territorial_defense",
+		"attack": 1,
+		"defense": 1,
+		"movement": 2
+	},
+	{
+		"x": 20,
+		"y": 16,
+		"faction": "ukraine",
+		"unit_type": "ukrainian_territorial_defense",
+		"attack": 1,
+		"defense": 1,
+		"movement": 2
+	},
+	{
+		"x": 11,
+		"y": 13,
+		"faction": "ukraine",
+		"unit_type": "ukrainian_territorial_defense",
+		"attack": 1,
+		"defense": 1,
+		"movement": 2
+	},
+	{
+		"x": 8,
+		"y": 10,
+		"faction": "ukraine",
+		"unit_type": "ukrainian_territorial_defense",
+		"attack": 1,
+		"defense": 1,
+		"movement": 2
+	},
+	{
+		"x": 3,
+		"y": 10,
+		"faction": "ukraine",
+		"unit_type": "ukrainian_territorial_defense",
+		"attack": 1,
+		"defense": 1,
+		"movement": 2
+	},
+	{
+		"x": 21,
+		"y": 18,
+		"faction": "ukraine",
+		"unit_type": "ukrainian_territorial_defense",
+		"attack": 1,
+		"defense": 1,
+		"movement": 2
+	},
+	{
+		"x": 33,
+		"y": 52,
+		"faction": "ukraine",
+		"unit_type": "ukrainian_territorial_defense",
+		"attack": 1,
+		"defense": 1,
+		"movement": 2
+	},
+	{
+		"x": 23,
+		"y": 50,
+		"faction": "ukraine",
+		"unit_type": "ukrainian_territorial_defense",
+		"attack": 1,
+		"defense": 1,
+		"movement": 2
+	},
+	{
+		"x": 44,
+		"y": 54,
+		"faction": "ukraine",
+		"unit_type": "ukrainian_territorial_defense",
+		"attack": 1,
+		"defense": 1,
+		"movement": 2
+	},
+	{
+		"x": 44,
+		"y": 50,
+		"faction": "ukraine",
+		"unit_type": "ukrainian_territorial_defense",
+		"attack": 1,
+		"defense": 1,
+		"movement": 2
+	},
+	{
+		"x": 20,
+		"y": 27,
+		"faction": "ukraine",
+		"unit_type": "ukrainian_territorial_defense",
+		"attack": 1,
+		"defense": 1,
+		"movement": 2
+	},
+	{
+		"x": 22,
+		"y": 26,
+		"faction": "ukraine",
+		"unit_type": "ukrainian_territorial_defense",
+		"attack": 1,
+		"defense": 1,
+		"movement": 2
+	},
+	{
+		"x": 11,
+		"y": 20,
+		"faction": "ukraine",
+		"unit_type": "ukrainian_territorial_defense",
+		"attack": 1,
+		"defense": 1,
+		"movement": 2
+	},
+	{
+		"x": 11,
+		"y": 21,
+		"faction": "ukraine",
+		"unit_type": "ukrainian_territorial_defense",
+		"attack": 1,
+		"defense": 1,
+		"movement": 2
+	},
+
+	{
+		"x": 21,
+		"y": 18,
+		"faction": "ukraine",
+		"unit_type": "ukrainian_deep_reconnaissance_group",
+		"attack": 1,
+		"defense": 1,
+		"movement": 4
+	},
+	{
+		"x": 20,
+		"y": 29,
+		"faction": "ukraine",
+		"unit_type": "ukrainian_deep_reconnaissance_group",
+		"attack": 1,
+		"defense": 1,
+		"movement": 4
+	},
+	{
+		"x": 20,
+		"y": 30,
+		"faction": "ukraine",
+		"unit_type": "ukrainian_deep_reconnaissance_group",
+		"attack": 1,
+		"defense": 1,
+		"movement": 4
+	},
+	{
+		"x": 20,
+		"y": 31,
+		"faction": "ukraine",
+		"unit_type": "ukrainian_deep_reconnaissance_group",
+		"attack": 1,
+		"defense": 1,
+		"movement": 4
+	},
+	{
+		"x": 33,
+		"y": 52,
+		"faction": "ukraine",
+		"unit_type": "ukrainian_deep_reconnaissance_group",
+		"attack": 1,
+		"defense": 1,
+		"movement": 4
+	},
+
+
+
+	{
+		"x": 39,
+		"y": 52,
+		"faction": "ukraine",
+		"unit_type": "ukrainian_assault_infantry",
+		"attack": 2,
+		"defense": 2,
+		"movement": 2
+	},
+	{
+		"x": 42,
+		"y": 52,
+		"faction": "ukraine",
+		"unit_type": "ukrainian_assault_infantry",
+		"attack": 2,
+		"defense": 2,
+		"movement": 2
+	},
+	{
+		"x": 27,
+		"y": 47,
+		"faction": "ukraine",
+		"unit_type": "ukrainian_assault_infantry",
+		"attack": 2,
+		"defense": 2,
+		"movement": 2
+	},
+	{
+		"x": 32,
+		"y": 47,
+		"faction": "ukraine",
+		"unit_type": "ukrainian_assault_infantry",
+		"attack": 2,
+		"defense": 2,
+		"movement": 2
+	},
+	{
+		"x": 32,
+		"y": 53,
+		"faction": "ukraine",
+		"unit_type": "ukrainian_assault_infantry",
+		"attack": 2,
+		"defense": 2,
+		"movement": 2
+	},
+	{
+		"x": 22,
+		"y": 41,
+		"faction": "ukraine",
+		"unit_type": "ukrainian_assault_infantry",
+		"attack": 2,
+		"defense": 2,
+		"movement": 2
+	},
+	{
+		"x": 14,
+		"y": 22,
+		"faction": "ukraine",
+		"unit_type": "ukrainian_assault_infantry",
+		"attack": 2,
+		"defense": 2,
+		"movement": 2
+	},
+	{
+		"x": 15,
+		"y": 18,
+		"faction": "ukraine",
+		"unit_type": "ukrainian_assault_infantry",
+		"attack": 2,
+		"defense": 2,
+		"movement": 2
+	},
+	{
+		"x": 21,
+		"y": 27,
+		"faction": "ukraine",
+		"unit_type": "ukrainian_assault_infantry",
+		"attack": 2,
+		"defense": 2,
+		"movement": 2
+	},
+	{
+		"x": 41,
+		"y": 51,
+		"faction": "ukraine",
+		"unit_type": "ukrainian_assault_infantry",
+		"attack": 2,
+		"defense": 2,
+		"movement": 2
+	},
+
+  {
 		"x": 24,
 		"y": 41,
 		"faction": "russia",
