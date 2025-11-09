@@ -215,3 +215,11 @@ python main.py  # Select "Upload Scenario"
 # 8. Deactivate venv
 deactivate
 ```
+
+## Tiled - Map properties
+
+Tile Width = 120
+Tile Height = 140 
+Tile Side Length (Hex) = 74
+Stagger Axis = Y
+Stagger Index = Odd

@@ -1,0 +1,114 @@
+{
+    "day": 9,
+    "month": 7,
+    "year": 1943,
+    "increment": 10,
+    "seasons": {
+        "1-10": {
+            "grass": {
+                "to": "mud",
+                "probability": 0.3
+            }
+        },
+        "10-10": {
+            "grass": {
+                "to": "mud",
+                "probability": 0.5
+            }
+        },
+        "20-10": {
+            "grass": {
+                "to": "mud",
+                "probability": 0.8
+            }
+        },
+        "1-11": {
+            "grass": {
+                "to": "snow",
+                "probability": 0.3
+            },
+            "forest": {
+                "to": "forest_snow",
+                "probability": 0.3
+            }
+        },
+        "10-11": {
+            "grass": {
+                "to": "snow",
+                "probability": 0.5
+            },
+            "forest": {
+                "to": "forest_snow",
+                "probability": 0.5
+            }
+        },
+        "20-11": {
+            "grass": {
+                "to": "snow",
+                "probability": 0.7
+            },
+            "forest": {
+                "to": "forest_snow",
+                "probability": 0.7
+            }
+        },
+        "1-12": {
+            "grass": {
+                "to": "snow",
+                "probability": 1.0
+            },
+            "forest": {
+                "to": "forest_snow",
+                "probability": 1.0
+            }
+        },
+        "10-3": {
+            "grass": {
+                "to": "mud",
+                "probability": 0.3
+            },
+            "forest": {
+                "to": "forest",
+                "probability": 0.3
+            }
+        },
+        "20-3": {
+            "grass": {
+                "to": "mud",
+                "probability": 0.5
+            },
+            "forest": {
+                "to": "forest",
+                "probability": 0.5
+            }
+        },
+        "1-4": {
+            "grass": {
+                "to": "mud",
+                "probability": 0.7
+            },
+            "forest": {
+                "to": "forest",
+                "probability": 1.0
+            }
+        },
+        "10-4": {
+            "grass": {
+                "to": "grass",
+                "probability": 0.3
+            }
+        },
+        "20-4": {
+            "grass": {
+                "to": "grass",
+                "probability": 0.5
+            }
+        },
+        "1-5": {
+            "grass": {
+                "to": "grass",
+                "probability": 1.0
+            }
+        }
+    }
+}

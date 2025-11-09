@@ -1,0 +1,30 @@
+{
+  "allies": {
+    "id": "faction_0",
+    "name": "allies",
+    "manpower_points": 7.5,
+    "manpower_income": 3,
+    "manpower_cap": 10,
+    "fuel_points": 400,
+    "fuel_income": 20,
+    "fuel_cap": 2500,
+    "airpower_points": 0,
+    "airpower_income": 2,
+    "airpower_cap": 20,
+    "units_cap": 85
+  },
+  "axis": {
+    "id": "faction_1",
+    "name": "axis",
+    "manpower_points": 1,
+    "manpower_income": 0.5,
+    "manpower_cap": 10,
+    "fuel_points": 500,
+    "fuel_income": 10,
+    "fuel_cap": 2500,
+    "airpower_points": 10,
+    "airpower_income": 2,
+    "airpower_cap": 20,
+    "units_cap": 75
+  }
+}
