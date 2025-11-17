@@ -1,5 +1,524 @@
 {
-  "city": [],
-  "supply": [],
+  "city": [
+    {
+      "x": 9,
+      "y": 0,
+      "name": "Bergamo",
+      "faction": "axis",
+      "population": 0
+    },
+    {
+      "x": 15,
+      "y": 0,
+      "name": "Vicenza",
+      "faction": "axis",
+      "population": 0
+    },
+    {
+      "x": 23,
+      "y": 0,
+      "name": "Trieste",
+      "faction": "neutral",
+      "population": 0
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "name": "Novara",
+      "faction": "axis",
+      "population": 0
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "name": "Milan",
+      "faction": "axis",
+      "population": 0
+    },
+    {
+      "x": 10,
+      "y": 1,
+      "name": "Brescia",
+      "faction": "axis",
+      "population": 0
+    },
+    {
+      "x": 13,
+      "y": 1,
+      "name": "Verona",
+      "faction": "axis",
+      "population": 0
+    },
+    {
+      "x": 17,
+      "y": 1,
+      "name": "Venice",
+      "faction": "axis",
+      "population": 0
+    },
+    {
+      "x": 25,
+      "y": 1,
+      "name": "Rijeka",
+      "faction": "neutral",
+      "population": 0
+    },
+    {
+      "x": 16,
+      "y": 2,
+      "name": "Padua",
+      "faction": "axis",
+      "population": 0
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "name": "Turin",
+      "faction": "axis",
+      "population": 0
+    },
+    {
+      "x": 35,
+      "y": 3,
+      "name": "Zagreb",
+      "faction": "neutral",
+      "population": 0
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "name": "Alessandria",
+      "faction": "axis",
+      "population": 0
+    },
+    {
+      "x": 8,
+      "y": 4,
+      "name": "Piacenza",
+      "faction": "axis",
+      "population": 0
+    },
+    {
+      "x": 11,
+      "y": 4,
+      "name": "Parma",
+      "faction": "axis",
+      "population": 0
+    },
+    {
+      "x": 24,
+      "y": 4,
+      "name": "Pula",
+      "faction": "axis",
+      "population": 0
+    },
+    {
+      "x": 15,
+      "y": 5,
+      "name": "Ferrara",
+      "faction": "axis",
+      "population": 0
+    },
+    {
+      "x": 13,
+      "y": 6,
+      "name": "Modena",
+      "faction": "axis",
+      "population": 0
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "name": "Savona",
+      "faction": "axis",
+      "population": 0
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "name": "Genoa",
+      "faction": "axis",
+      "population": 0
+    },
+    {
+      "x": 14,
+      "y": 7,
+      "name": "Bologna",
+      "faction": "axis",
+      "population": 0
+    },
+    {
+      "x": 17,
+      "y": 7,
+      "name": "Ravenna",
+      "faction": "axis",
+      "population": 0
+    },
+    {
+      "x": 29,
+      "y": 8,
+      "name": "Zadar",
+      "faction": "neutral",
+      "population": 0
+    },
+    {
+      "x": 19,
+      "y": 9,
+      "name": "Rimini",
+      "faction": "axis",
+      "population": 0
+    },
+    {
+      "x": 40,
+      "y": 9,
+      "name": "Sarajevo",
+      "faction": "neutral",
+      "population": 0
+    },
+    {
+      "x": 0,
+      "y": 10,
+      "name": "Nice",
+      "faction": "axis",
+      "population": 0
+    },
+    {
+      "x": 14,
+      "y": 11,
+      "name": "Florence",
+      "faction": "axis",
+      "population": 0
+    },
+    {
+      "x": 20,
+      "y": 11,
+      "name": "Pesaro",
+      "faction": "axis",
+      "population": 0
+    },
+    {
+      "x": 22,
+      "y": 11,
+      "name": "Ancona",
+      "faction": "axis",
+      "population": 0
+    },
+    {
+      "x": 33,
+      "y": 11,
+      "name": "Split",
+      "faction": "neutral",
+      "population": 0
+    },
+    {
+      "x": 11,
+      "y": 12,
+      "name": "Livorno",
+      "faction": "axis",
+      "population": 0
+    },
+    {
+      "x": 38,
+      "y": 12,
+      "name": "Mostar",
+      "faction": "axis",
+      "population": 0
+    },
+    {
+      "x": 14,
+      "y": 13,
+      "name": "Siena",
+      "faction": "axis",
+      "population": 0
+    },
+    {
+      "x": 18,
+      "y": 13,
+      "name": "Perugia",
+      "faction": "axis",
+      "population": 0
+    },
+    {
+      "x": 7,
+      "y": 17,
+      "name": "Bastia",
+      "faction": "axis",
+      "population": 0
+    },
+    {
+      "x": 19,
+      "y": 17,
+      "name": "Terni",
+      "faction": "axis",
+      "population": 0
+    },
+    {
+      "x": 42,
+      "y": 17,
+      "name": "Podgorica",
+      "faction": "neutral",
+      "population": 0
+    },
+    {
+      "x": 17,
+      "y": 18,
+      "name": "Viterbo",
+      "faction": "axis",
+      "population": 0
+    },
+    {
+      "x": 25,
+      "y": 18,
+      "name": "Pescara",
+      "faction": "axis",
+      "population": 0
+    },
+    {
+      "x": 16,
+      "y": 20,
+      "name": "Civitavecchia",
+      "faction": "axis",
+      "population": 0
+    },
+    {
+      "x": 19,
+      "y": 21,
+      "name": "Rome",
+      "faction": "axis",
+      "population": 0
+    },
+    {
+      "x": 32,
+      "y": 21,
+      "name": "Vieste",
+      "faction": "axis",
+      "population": 0
+    },
+    {
+      "x": 5,
+      "y": 22,
+      "name": "Ajaccio",
+      "faction": "axis",
+      "population": 0
+    },
+    {
+      "x": 6,
+      "y": 23,
+      "name": "Porto-Vecchio",
+      "faction": "axis",
+      "population": 0
+    },
+    {
+      "x": 22,
+      "y": 23,
+      "name": "Frosinone",
+      "faction": "axis",
+      "population": 0
+    },
+    {
+      "x": 30,
+      "y": 24,
+      "name": "Foggia",
+      "faction": "axis",
+      "population": 0
+    },
+    {
+      "x": 35,
+      "y": 25,
+      "name": "Bari",
+      "faction": "axis",
+      "population": 0
+    },
+    {
+      "x": 7,
+      "y": 27,
+      "name": "Olbia",
+      "faction": "axis",
+      "population": 0
+    },
+    {
+      "x": 26,
+      "y": 27,
+      "name": "Naples",
+      "faction": "axis",
+      "population": 0
+    },
+    {
+      "x": 39,
+      "y": 27,
+      "name": "Brindisi",
+      "faction": "axis",
+      "population": 0
+    },
+    {
+      "x": 4,
+      "y": 28,
+      "name": "Sassari",
+      "faction": "axis",
+      "population": 0
+    },
+    {
+      "x": 32,
+      "y": 28,
+      "name": "Potenza",
+      "faction": "axis",
+      "population": 0
+    },
+    {
+      "x": 35,
+      "y": 28,
+      "name": "Matera",
+      "faction": "axis",
+      "population": 0
+    },
+    {
+      "x": 28,
+      "y": 29,
+      "name": "Salerno",
+      "faction": "axis",
+      "population": 0
+    },
+    {
+      "x": 37,
+      "y": 29,
+      "name": "Taranto",
+      "faction": "axis",
+      "population": 0
+    },
+    {
+      "x": 40,
+      "y": 29,
+      "name": "Lecce",
+      "faction": "axis",
+      "population": 0
+    },
+    {
+      "x": 6,
+      "y": 31,
+      "name": "Nuoro",
+      "faction": "axis",
+      "population": 0
+    },
+    {
+      "x": 34,
+      "y": 31,
+      "name": "Policoro",
+      "faction": "axis",
+      "population": 0
+    },
+    {
+      "x": 40,
+      "y": 31,
+      "name": "Gallipoli",
+      "faction": "axis",
+      "population": 0
+    },
+    {
+      "x": 4,
+      "y": 32,
+      "name": "Oristano",
+      "faction": "axis",
+      "population": 0
+    },
+    {
+      "x": 5,
+      "y": 37,
+      "name": "Cagliari",
+      "faction": "axis",
+      "population": 0
+    },
+    {
+      "x": 34,
+      "y": 37,
+      "name": "Cosenza",
+      "faction": "axis",
+      "population": 0
+    },
+    {
+      "x": 31,
+      "y": 42,
+      "name": "Messina",
+      "faction": "axis",
+      "population": 0
+    },
+    {
+      "x": 32,
+      "y": 43,
+      "name": "Villa San Giovanni",
+      "faction": "axis",
+      "population": 0
+    },
+    {
+      "x": 23,
+      "y": 44,
+      "name": "Palermo",
+      "faction": "axis",
+      "population": 0
+    },
+    {
+      "x": 19,
+      "y": 45,
+      "name": "Marsala",
+      "faction": "axis",
+      "population": 0
+    },
+    {
+      "x": 30,
+      "y": 46,
+      "name": "Catania",
+      "faction": "axis",
+      "population": 0
+    },
+    {
+      "x": 9,
+      "y": 48,
+      "name": "Bizerte",
+      "faction": "allies",
+      "population": 0
+    },
+    {
+      "x": 30,
+      "y": 49,
+      "name": "Syracuse",
+      "faction": "axis",
+      "population": 0
+    },
+    {
+      "x": 0,
+      "y": 50,
+      "name": "Annaba",
+      "faction": "allies",
+      "population": 0
+    },
+    {
+      "x": 14,
+      "y": 50,
+      "name": "Kelibia",
+      "faction": "allies",
+      "population": 0
+    },
+    {
+      "x": 10,
+      "y": 51,
+      "name": "Tunis",
+      "faction": "allies",
+      "population": 0
+    },
+    {
+      "x": 18,
+      "y": 52,
+      "name": "Malta",
+      "faction": "allies",
+      "population": 0
+    }
+  ],
+  "supply": [
+    { "x": 7, "y": 0, "faction": "axis" },
+    { "x": 18, "y": 0, "faction": "axis" },
+    { "x": 0, "y": 3, "faction": "axis" },
+    { "x": 0, "y": 51, "faction": "allies" },
+    { "x": 9, "y": 51, "faction": "allies" },
+    { "x": 17, "y": 51, "faction": "allies" }
+  ],
   "oilfield": []
 }
