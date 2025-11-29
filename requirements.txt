@@ -1,2 +1,2 @@
-pwinput==1.0.3
-Requests==2.31.0
+inquirer==3.4.1
+Requests==2.32.5

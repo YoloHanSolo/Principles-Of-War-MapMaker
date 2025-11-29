@@ -1,20 +1,23 @@
 from inquirer import Text, prompt
 
-if __name__ == "__main__":
-    values = prompt([
-        Text(
-            "size_x",
-            "size_x",
-        ),
-        Text(
-            "size_y",
-            "size_y",
-        ),
-        Text(
-            "scale",
-            "scale",
-        )
-    ])
+
+def run():
+    values = prompt(
+        [
+            Text(
+                "size_x",
+                "size x in pixels",
+            ),
+            Text(
+                "size_y",
+                "size y in pixels",
+            ),
+            Text(
+                "scale",
+                "scale",
+            ),
+        ]
+    )
 
     size_x = int(values["size_x"])
     size_y = int(values["size_y"])

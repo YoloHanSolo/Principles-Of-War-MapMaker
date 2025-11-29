@@ -25,3 +25,8 @@ class LandmarkType(Enum):
     CITY = "city"
     OILFIELD = "oilfield"
     SUPPLY = "supply"
+
+
+class Stage(Enum):
+    DEV = "dev"
+    PROD = "prod"
