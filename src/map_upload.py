@@ -14,7 +14,7 @@ TOKEN_FILE = path.join(CACHE_DIR, "jwt_token.json")
 makedirs(CACHE_DIR, exist_ok=True)
 
 server_urls = {
-    Stage.DEV.value: "http://127.0.0.1:5001",
+    Stage.DEV.value: "https://web-server-dev.principles-of-war.com",
     Stage.PROD.value: "https://web-server.principles-of-war.com",
 }
 
