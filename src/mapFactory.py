@@ -1,7 +1,7 @@
 from os import listdir
 from json import load, dump, dumps
 from base64 import b64encode
-from sys import exit, argv
+from sys import exit
 from time import time
 from hashlib import md5
 from xml.etree import ElementTree
@@ -16,7 +16,7 @@ class MapFactory:
     def __init__(self, map_id):
 
         self.map = MapObject()
-
+        self.map_id = map_id
         self.path = f"../mapsData/{map_id}/"
 
         try: 
@@ -223,27 +223,27 @@ class MapFactory:
         with open(path, "r") as file:
             return load(file)
         
-
-if __name__ == "__main__":
-    if len(argv) == 1:
-        #map_id = input("Enter map_id: ")
-        answers = prompt([
-            List(
-                "map_id",
-                message="Select map:",
-                choices=listdir("../mapsData"),
-            )
-        ])
-        map_id = answers["map_id"]
-    else:
-        map_id = argv[1]
-
+def run(map_id):
     if map_id not in listdir("../mapsData"):
         print(f"ERROR: invalid map id '{map_id}'")
         exit()
 
     map_factory = MapFactory(map_id)
     filename = map_factory.map.data["metadata"]["filename"]
+
     with open("../maps/" + filename, 'w+') as file:
         dump(map_factory.map.data, file)
         print(f"INFO: output '../maps/{filename}")
+
+
+if __name__ == "__main__":
+    answers = prompt([
+        List(
+            "map_id",
+            message="Select map:",
+            choices=listdir("../mapsData"),
+        )
+    ])
+
+    map_id = answers["map_id"]
+    run(map_id)
