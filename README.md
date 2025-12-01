@@ -131,7 +131,7 @@ Follow these steps to create, edit, and publish a map:
 
 4. **Place landmarks**
 
-   * Cities, oilfields, depots, etc.
+   * Cities, oilfields, supply depots, etc.
    * After placing landmarks, run:
 
      ```bash
