@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.9" tiledversion="1.9.2" orientation="hexagonal" renderorder="right-down" width="42" height="38" tilewidth="120" tileheight="140" infinite="0" hexsidelength="80" staggeraxis="y" staggerindex="odd" nextlayerid="29" nextobjectid="17">
+<map version="1.10" tiledversion="1.11.2" orientation="hexagonal" renderorder="right-down" width="42" height="38" tilewidth="120" tileheight="140" infinite="0" hexsidelength="80" staggeraxis="y" staggerindex="odd" nextlayerid="30" nextobjectid="17">
  <tileset firstgid="1" source="../../resources/tsx/terrain_grass.tsx"/>
  <tileset firstgid="2" source="../../resources/tsx/terrain_water.tsx"/>
  <tileset firstgid="3" source="../../resources/tsx/terrain_mountain.tsx"/>
@@ -36,7 +36,7 @@
    <property name="name" value="Demyansk Pocket 1942"/>
   </properties>
  </objectgroup>
- <layer id="23" name="objective_faction_1" width="42" height="38" opacity="0.13">
+ <layer id="23" name="objective_faction_1" width="42" height="38" visible="0" opacity="0.13">
   <data encoding="csv">
 26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,
 26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,
@@ -162,7 +162,7 @@
 10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,9,9,9,9,8,9,9,9,9,9,9,9,8,8,8,8,8,9,9,9,9,9
 </data>
  </layer>
- <layer id="1" name="terrain" width="42" height="38" opacity="0.1">
+ <layer id="1" name="terrain" width="42" height="38" visible="0" opacity="0.1">
   <data encoding="csv">
 7,7,7,1,1,1,5,5,5,5,5,5,7,7,1,7,7,1,1,1,1,7,5,5,5,7,1,1,1,5,5,5,7,7,1,1,1,1,1,1,7,7,
 7,7,1,1,1,1,5,7,7,7,7,1,7,7,5,7,1,1,1,1,1,7,7,5,5,5,7,1,7,7,7,7,1,1,1,7,7,1,1,7,7,7,
@@ -204,7 +204,7 @@
 7,7,1,1,1,7,1,7,7,7,1,1,1,5,1,7,7,1,7,7,1,1,1,1,2,1,7,7,1,7,1,1,2,2,2,2,2,7,7,1,7,7
 </data>
  </layer>
- <layer id="5" name="railway" width="42" height="38">
+ <layer id="5" name="railway" width="42" height="38" visible="0">
   <data encoding="csv">
 16,16,16,16,15,16,16,16,16,16,16,16,16,16,16,16,16,16,16,15,15,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,15,16,
 16,16,16,16,15,15,16,16,16,16,16,16,16,16,16,16,16,16,15,16,15,15,16,16,16,16,16,15,15,15,15,15,16,16,16,16,16,16,16,15,16,16,
@@ -249,7 +249,7 @@
  <imagelayer id="27" name="model" visible="0" opacity="0.38">
   <image source="model.PNG" width="5100" height="4248"/>
  </imagelayer>
- <layer id="22" name="river" width="42" height="38">
+ <layer id="22" name="river" width="42" height="38" visible="0">
   <data encoding="csv">
 17,17,17,17,21,17,17,17,17,17,17,17,17,17,17,17,17,17,17,24,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,
 17,17,17,17,24,17,17,17,17,17,17,17,17,17,17,17,17,17,19,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,
@@ -333,7 +333,7 @@
 27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27
 </data>
  </layer>
- <layer id="6" name="landmark" width="42" height="38" opacity="0.56">
+ <layer id="6" name="landmark" width="42" height="38" visible="0" opacity="0.56">
   <data encoding="csv">
 11,11,11,11,12,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,13,11,
 11,11,11,11,13,11,11,11,11,11,11,11,11,11,11,11,11,11,12,11,11,11,11,11,11,11,11,11,12,11,11,11,11,11,11,11,11,11,11,11,11,11,
