@@ -3,6 +3,7 @@ from json import load
 from inquirer import List, prompt
 from PIL import Image, ImageFont, ImageDraw
 from operator import add
+from random import Random
 
 BASE_DIR = path.dirname(path.abspath(__file__))
 ROOT_DIR = path.abspath(path.join(BASE_DIR, ".."))
@@ -60,6 +61,7 @@ class MapPreview:
             data = load(file)
         self.hexagons = data["hexagons"]
         self.cities = data["landmarks"]["city"]
+        self.time = data["time"]
         self.hexagon_w = data["metadata"]["width"]
         self.hexagon_h = data["metadata"]["height"]
         self.pixel_w = self.hexagon_w * 120 + 60
@@ -74,7 +76,7 @@ class MapPreview:
         for hexagon in self.hexagons:
             ix = hexagon["x"]
             iy = hexagon["y"]
-            terrain = hexagon["terrain"]
+            terrain = hexagon["terrain_current"]
             landmark = hexagon["landmark"]
 
             px = ix * 120 + (iy % 2) * 60
@@ -180,7 +182,54 @@ class MapPreview:
                 (cpx2, cpy2) = ((hc1[0] + hc2[0]) / 2, (hc1[1] + hc2[1]) / 2)            
             
                 self.draw.line([(px + cpx1, py + cpy1), (px + cpx2, py + cpy2)], fill=(0, 0, 0), width=12)
+
+    def process_seasons(self):
+        for hexagon in self.hexagons:
+            hexagon["terrain_current"] = hexagon["terrain"]
+
+        if not self.time["seasons"]:
+            return
+
+        month_days = {1:31, 2:28, 3:31, 4:30, 5:31, 6:30, 7:31, 8:31, 9:30, 10:31, 11:30, 12:31}
+
+        seasons_map = {}
+        for key, value in self.time["seasons"].items():
+            d_str, m_str = key.split("-")
+            d, m = int(d_str), int(m_str)
+            day_of_year = sum(month_days[i] for i in range(1, m)) + d
+            seasons_map[day_of_year] = value
+
+        current_day = self.time["day"]
+        current_month = self.time["month"]
+        
+        target_doy = sum(month_days[i] for i in range(1, current_month)) + current_day
+        
+        sim_doy = target_doy
+        total_steps = 365 
+        increment = self.time.get("increment", 1)
+        
+        random_gen = Random(1337)
+
+        steps_taken = 0
+        while steps_taken < total_steps:
+            start_day = sim_doy
+            end_day = sim_doy + increment
+            
+            for check_day in range(start_day, end_day):
+                actual_doy = ((check_day - 1) % 365) + 1
                 
+                if actual_doy in seasons_map:
+                    rules = seasons_map[actual_doy]
+                    for hexagon in self.hexagons:
+                        terrain_type = hexagon["terrain"]
+                        if terrain_type in rules:
+                            rule = rules[terrain_type]
+                            if random_gen.uniform(0, 1) <= rule["probability"]:
+                                hexagon["terrain_current"] = rule["to"]
+
+            sim_doy += increment
+            steps_taken += increment
+
     def save_canvas(self):
         self.canvas.save(path.join(MAPS_DATA_DIR, self.map_id, "preview.png"))
 
@@ -198,6 +247,7 @@ def run():
     map_preview = MapPreview(map_id, 0)
     map_preview.load_terrain_images()
     map_preview.load_map_data()
+    map_preview.process_seasons()
     map_preview.draw_hexagons()
     map_preview.draw_rivers()
     map_preview.draw_railway()
