@@ -1,6 +1,6 @@
-# Principles of War – Map Maker
+# Principles of War – Scenario Maker
 
-Welcome to the **Principles of War Map Maker**! This guide will walk you through creating, editing, compiling, and publishing maps for the game. Follow the steps carefully to get started.
+Welcome to the **Principles of War Scenario Maker**! This guide will walk you through creating, editing, compiling, and publishing scenarios for the game. Follow the steps carefully to get started.
 
 ---
 
@@ -8,7 +8,7 @@ Welcome to the **Principles of War Map Maker**! This guide will walk you through
 
 1. [Requirements](#requirements)
 2. [Setup](#setup)
-3. [Creating a New Map](#creating-a-new-map)
+3. [Creating a New Scenario](#creating-a-new-scenario)
 4. [Workflow](#workflow)
 5. [Available Commands](#available-commands)
 6. [Contributing & Support](#contributing--support)
@@ -19,10 +19,10 @@ Welcome to the **Principles of War Map Maker**! This guide will walk you through
 
 Before starting, ensure you have the following installed:
 
-* **Python 3** ([Download here](https://www.python.org/downloads/))
-* **Tiled Level Editor** ([Download here](https://www.mapeditor.org/))
-* **VSCode** or any text editor for `.json` files ([Download here](https://code.visualstudio.com/download))
-* **Paint.NET** or any image editor that supports transparent `.png` icons ([Download here](https://www.getpaint.net/download.html))
+- **Python 3** ([Download here](https://www.python.org/downloads/))
+- **Tiled Level Editor** ([Download here](https://www.scenarioeditor.org/))
+- **VSCode** or any text editor for `.json` files ([Download here](https://code.visualstudio.com/download))
+- **Paint.NET** or any image editor that supports transparent `.png` icons ([Download here](https://www.getpaint.net/download.html))
 
 ---
 
@@ -42,14 +42,13 @@ Before starting, ensure you have the following installed:
    ```
 
 3. Activate the virtual environment:
-
-   * **Windows**:
+   - **Windows**:
 
      ```bash
      venv\Scripts\activate
      ```
 
-   * **Linux / macOS**:
+   - **Linux / macOS**:
 
      ```bash
      source venv/bin/activate
@@ -71,114 +70,111 @@ Before starting, ensure you have the following installed:
 
 ---
 
-## Creating a New Map
+## Creating a New Scenario
 
-1. **Create a new map folder**
+1. **Create a new scenario folder**
 
-   Inside `./maps_data`, create a folder for your map and name it using a `<MAP_ID>` format, e.g.:
+   Inside `./scenarios_data`, create a folder for your scenario and name it using a `<scenario_ID>` format, e.g.:
 
    ```
-   ./maps_data/map_new
+   ./scenarios_data/scenario_new
    ```
 
 2. **Create a unit icon folder**
 
-   Inside your map folder, create a `unit_icons` folder for all your `.png` unit icons:
+   Inside your scenario folder, create a `unit_icons` folder for all your `.png` unit icons:
 
    ```
-   ./maps_data/map_new/unit_icons
+   ./scenarios_data/scenario_new/unit_icons
    ```
 
 3. **Prepare required JSON files**
 
-   Your map folder should contain:
+   Your scenario folder should contain:
 
    ```
    unit_icons/...
    description.json
    factions.json
    landmarks.json
-   map.tmx # Map created with Tiled
+   scenario.tmx # Scenario created with Tiled
    time.json
    turn.json
    unit_types.json
    units.json
    ```
 
-> Tip: Inspect existing maps in `./maps_data/` to understand structure and formatting.
+> Tip: Inspect existing scenarios in `./scenarios_data/` to understand structure and formatting.
 
 ---
 
 ## Workflow
 
-Follow these steps to create, edit, and publish a map:
+Follow these steps to create, edit, and publish a scenario:
 
 1. **Create the virtual environment and activate it** (as shown in Setup).
 
-2. **Create a new empty map**:
+2. **Create a new empty scenario**:
 
    ```bash
    python main.py
    ```
 
-   * Select `Create New Map`
-   * Enter a `<MAP_ID>` (e.g., `map_new`)
+   - Select `Create New Scenario`
+   - Enter a `<scenario_ID>` (e.g., `scenario_new`)
 
-3. **Use Tiled to design the map**
-
-   * Open `map.tmx` in Tiled.
-   * Design terrain layers (plains, mountains, rivers, etc.).
+3. **Use Tiled to design the scenario**
+   - Open `scenario.tmx` in Tiled.
+   - Design terrain layers (plains, mountains, rivers, etc.).
 
 4. **Place landmarks**
-
-   * Cities, oilfields, supply depots, etc.
-   * After placing landmarks, run:
+   - Cities, oilfields, supply depots, etc.
+   - After placing landmarks, run:
 
      ```bash
      python main.py
      ```
 
-     * Select `Generate Landmarks Template`
-     * This populates `landmarks.json` automatically.
+     - Select `Generate Landmarks Template`
+     - This populates `landmarks.json` automatically.
 
-5. **Continue working on the map**
+5. **Continue working on the scenario**
+   - Add units, set factions, define turns and time, etc.
+   - Edit `.json` files in a text editor as needed.
 
-   * Add units, set factions, define turns and time, etc.
-   * Edit `.json` files in a text editor as needed.
+6. **Compile your scenario**
 
-6. **Compile your map**
-
-   When your map is ready:
+   When your scenario is ready:
 
    ```bash
    python main.py
    ```
 
-   * Select `Compile Map`
-   * This generates a single `.json` file in `./maps`.
+   - Select `Compile Scenario`
+   - This generates a single `.json` file in `./scenarios`.
 
 7. **Upload to server (optional)**
 
-   To publish your map:
+   To publish your scenario:
 
    ```bash
    python main.py
    ```
 
-   * Select `Upload Map`
-   * You need a **map_maker** role. Contact: [jnpelicon@gmail.com](mailto:jnpelicon@gmail.com)
+   - Select `Upload Scenario`
+   - You need a **scenario_maker** role. Contact: [jnpelicon@gmail.com](mailto:jnpelicon@gmail.com)
 
 ---
 
 ## Available Commands (via `main.py`)
 
-| Command                     | Description                                         |
-| --------------------------- | --------------------------------------------------- |
-| Create New Map              | Initialize a new empty map folder and default files |
-| Generate Landmarks Template | Scan `map.tmx` and generate `landmarks.json`        |
-| Compile Map                 | Build a single JSON file containing all map data    |
-| Upload Map                  | Publish map to the game server                      |
-| Exit                        | Close the script                                    |
+| Command                     | Description                                              |
+| --------------------------- | -------------------------------------------------------- |
+| Create New Scenario         | Initialize a new empty scenario folder and default files |
+| Generate Landmarks Template | Scan `scenario.tmx` and generate `landmarks.json`        |
+| Compile Scenario            | Build a single JSON file containing all scenario data    |
+| Upload Scenario             | Publish scenario to the game server                      |
+| Exit                        | Close the script                                         |
 
 > All commands are interactive: first select a command, then parameters are collected using Inquirer prompts.
 
@@ -186,9 +182,9 @@ Follow these steps to create, edit, and publish a map:
 
 ## Contributing & Support
 
-* If you encounter bugs or issues, please open an issue or contact **[jnpelicon@gmail.com](mailto:jnpelicon@gmail.com)**
-* Suggestions for improvement are welcome.
-* Review existing maps in `./maps_data/` for guidance and examples.
+- If you encounter bugs or issues, please open an issue or contact **[jnpelicon@gmail.com](mailto:jnpelicon@gmail.com)**
+- Suggestions for improvement are welcome.
+- Review existing scenarios in `./scenarios_data/` for guidance and examples.
 
 ---
 
@@ -202,19 +198,19 @@ source venv/bin/activate  # or venv\Scripts\activate
 # 2. Install dependencies
 pip install -r requirements.txt
 
-# 3. Create a new map
-python main.py  # Select "Create New Map" -> map_new
+# 3. Create a new scenario
+python main.py  # Select "Create New Scenario" -> scenario_new
 
-# 4. Edit map in Tiled
+# 4. Edit scenario in Tiled
 
 # 5. Generate landmarks template
 python main.py  # Select "Generate Landmarks Template"
 
-# 6. Compile map
-python main.py  # Select "Compile Map"
+# 6. Compile scenario
+python main.py  # Select "Compile Scenario"
 
 # 7. Optionally upload
-python main.py  # Select "Upload Map"
+python main.py  # Select "Upload Scenario"
 
 # 8. Deactivate venv
 deactivate

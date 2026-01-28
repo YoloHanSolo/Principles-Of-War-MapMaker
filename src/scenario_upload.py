@@ -7,7 +7,7 @@ from src.types.enums import Stage
 
 BASE_DIR = path.dirname(path.abspath(__file__))
 ROOT_DIR = path.abspath(path.join(BASE_DIR, ".."))
-MAPS_DIR = path.join(ROOT_DIR, "maps")
+SCENARIOS_DIR = path.join(ROOT_DIR, "scenarios")
 
 CACHE_DIR = path.join(ROOT_DIR, ".cache")
 TOKEN_FILE = path.join(CACHE_DIR, "jwt_token.json")
@@ -47,7 +47,7 @@ def run():
 
     values = prompt(
         [
-            List(name="filename", message="map", choices=listdir(MAPS_DIR)),
+            List(name="filename", message="scenario", choices=listdir(SCENARIOS_DIR)),
             List(
                 name="stage", message="stage", choices=[value.value for value in Stage]
             ),
@@ -111,12 +111,12 @@ def run():
             print("[ERROR] server offline")
             exit()
 
-    if filename not in listdir(MAPS_DIR):
+    if filename not in listdir(SCENARIOS_DIR):
         print(f"[ERROR] invalid filename '{filename}'")
         exit()
 
     try:
-        with open(f"{MAPS_DIR}/{filename}", "rb") as file:
+        with open(f"{SCENARIOS_DIR}/{filename}", "rb") as file:
             print(f"[INFO] PUT {server_url}/maps/upload")
             response = put(
                 url=f"{server_url}/maps/upload",
@@ -139,7 +139,7 @@ def run():
                 print("[ERROR] unsupported media type 415")
                 exit()
     except FileNotFoundError:
-        print(f"[ERROR] could not open file '{MAPS_DIR}/{filename}'")
+        print(f"[ERROR] could not open file '{SCENARIOS_DIR}/{filename}'")
         exit()
     except Exception as e:
         print(f"[ERROR] upload failed: {e}")

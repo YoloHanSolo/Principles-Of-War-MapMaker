@@ -4,7 +4,7 @@ from inquirer import Text, prompt
 
 BASE_DIR = path.dirname(path.abspath(__file__))
 ROOT_DIR = path.abspath(path.join(BASE_DIR, ".."))
-MAPS_DATA_DIR = path.join(ROOT_DIR, "maps_data")
+SCENARIOS_DATA_DIR = path.join(ROOT_DIR, "scenarios_data")
 
 
 def run():
@@ -12,12 +12,12 @@ def run():
     values = prompt(
         [
             Text(
-                "map_id",
-                "Map ID",
+                "scenario_id",
+                "Scenario ID",
             ),
             Text(
-                "map_name",
-                "Map name",
+                "scenario_name",
+                "Scenario name",
             ),
             Text(
                 "creator",
@@ -26,18 +26,18 @@ def run():
         ]
     )
 
-    map_id = values["map_id"].strip()
-    map_name = values["map_name"].strip()
+    scenario_id = values["scenario_id"].strip()
+    scenario_name = values["scenario_name"].strip()
     creator = values["creator"].strip()
 
-    # Create map folder
-    map_dir = path.join(MAPS_DATA_DIR, map_id)
-    unit_icons_dir = path.join(map_dir, "unit_icons")
+    # Create scenario folder
+    scenario_dir = path.join(SCENARIOS_DATA_DIR, scenario_id)
+    unit_icons_dir = path.join(scenario_dir, "unit_icons")
     makedirs(unit_icons_dir, exist_ok=True)
 
     # Create description.json
     description = {"description": "<DESCRIPTION>"}
-    with open(path.join(map_dir, "description.json"), "w") as f:
+    with open(path.join(scenario_dir, "description.json"), "w") as f:
         dump(description, f, indent=4)
 
     # Create factions.json
@@ -71,15 +71,15 @@ def run():
             "units_cap": 0,
         },
     }
-    with open(path.join(map_dir, "factions.json"), "w") as f:
+    with open(path.join(scenario_dir, "factions.json"), "w") as f:
         dump(factions, f, indent=4)
 
     # Create landmarks.json
     landmarks = {"city": [], "supply": [], "oilfield": []}
-    with open(path.join(map_dir, "landmarks.json"), "w") as f:
+    with open(path.join(scenario_dir, "landmarks.json"), "w") as f:
         dump(landmarks, f, indent=4)
 
-    # Create map.tmx
+    # Create scenario.tmx
     tmx_content = f"""<?xml version="1.0" encoding="UTF-8"?>
     <map version="1.9" tiledversion="1.9.2" orientation="hexagonal" renderorder="left-up" width="1" height="1" tilewidth="120" tileheight="140" infinite="0" hexsidelength="80" staggeraxis="y" staggerindex="odd" nextlayerid="10" nextobjectid="1">
     <tileset firstgid="1" source="../../resources/tsx/terrain_grass.tsx"/>
@@ -113,9 +113,9 @@ def run():
     <objectgroup id="5" name="metadata">
       <properties>
       <property name="creator" value="{creator}"/>
-      <property name="filename" value="{map_id}.json"/>
-      <property name="id" value="{map_id}"/>
-      <property name="name" value="{map_name}"/>
+      <property name="filename" value="{scenario_id}.json"/>
+      <property name="id" value="{scenario_id}"/>
+      <property name="name" value="{scenario_name}"/>
       </properties>
     </objectgroup>
     <layer id="8" name="objective_faction_1" width="40" height="16">
@@ -161,17 +161,17 @@ def run():
     </map>
   """
 
-    with open(path.join(map_dir, "map.tmx"), "w") as f:
+    with open(path.join(scenario_dir, "scenario.tmx"), "w") as f:
         f.write(tmx_content)
 
     # time.json
     time_data = {"day": 1, "month": 1, "year": 2025, "increment": 1, "seasons": {}}
-    with open(path.join(map_dir, "time.json"), "w") as f:
+    with open(path.join(scenario_dir, "time.json"), "w") as f:
         dump(time_data, f, indent=4)
 
     # turn.json
     turn_data = {"duration": 1000}
-    with open(path.join(map_dir, "turn.json"), "w") as f:
+    with open(path.join(scenario_dir, "turn.json"), "w") as f:
         dump(turn_data, f, indent=4)
 
     # unit_types.json
@@ -205,11 +205,13 @@ def run():
             "frequency": 5,
         },
     }
-    with open(path.join(map_dir, "unit_types.json"), "w") as f:
+    with open(path.join(scenario_dir, "unit_types.json"), "w") as f:
         dump(unit_types, f, indent=4)
 
     # units.json
-    with open(path.join(map_dir, "units.json"), "w") as f:
+    with open(path.join(scenario_dir, "units.json"), "w") as f:
         dump([], f, indent=4)
 
-    print(f"[INFO] New map '{map_id}' created successfully in '{map_dir}'.")
+    print(
+        f"[INFO] New scenario '{scenario_dir}' created successfully in '{scenario_dir}'."
+    )

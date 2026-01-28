@@ -5,31 +5,33 @@ from sys import exit
 from time import time
 from hashlib import md5
 from xml.etree import ElementTree
-from src.models.map_object import MapObject
+from src.models.scenario_object import ScenarioObject
 from inquirer import List, prompt
 
 BASE_DIR = path.dirname(path.abspath(__file__))
 ROOT_DIR = path.abspath(path.join(BASE_DIR, ".."))
-MAPS_DIR = path.join(ROOT_DIR, "maps")
-MAPS_DATA_DIR = path.join(ROOT_DIR, "maps_data")
+SCENARIOS_DIR = path.join(ROOT_DIR, "scenarios")
+SCENARIOS_DATA_DIR = path.join(ROOT_DIR, "scenarios_data")
 RESOURCES_DIR = path.join(ROOT_DIR, "resources")
 
 cy = None
 cx = None
 
 
-class MapCompile:
+class ScenarioCompile:
 
-    def __init__(self, map_id):
+    def __init__(self, scenario_id):
 
-        self.map = MapObject()
-        self.map_id = map_id
-        self.path = f"{MAPS_DATA_DIR}/{map_id}/"
+        self.scenario = ScenarioObject()
+        self.scenario_id = scenario_id
+        self.path = f"{SCENARIOS_DATA_DIR}/{scenario_id}/"
 
         try:
-            self.tree_root = ElementTree.parse(self.path + "map.tmx").getroot()
+            self.tree_root = ElementTree.parse(self.path + "scenario.tmx").getroot()
         except:
-            print(f"[ERROR] error when parsing {MAPS_DATA_DIR}/{map_id}/map.tmx")
+            print(
+                f"[ERROR] error when parsing {SCENARIOS_DATA_DIR}/{scenario_id}/scenario.tmx"
+            )
             exit()
 
         try:
@@ -38,7 +40,7 @@ class MapCompile:
             )
         except:
             print(
-                f"[ERROR] missing or invalid 'metadata' layer in {MAPS_DATA_DIR}/{map_id}/map.tmx"
+                f"[ERROR] missing or invalid 'metadata' layer in {SCENARIOS_DATA_DIR}/{scenario_id}/scenario.tmx"
             )
             exit()
 
@@ -59,46 +61,52 @@ class MapCompile:
         obj_f0_data = self.get_xml_array("layer", "objective_faction_0", 25)
         obj_f1_data = self.get_xml_array("layer", "objective_faction_1", 25)
 
-        self.map.create_metadata(id=self.get_xml_properties(metadata, "id"))
-        self.map.create_metadata(filename=self.get_xml_properties(metadata, "filename"))
-        self.map.create_metadata(name=self.get_xml_properties(metadata, "name"))
-        self.map.create_metadata(creator=self.get_xml_properties(metadata, "creator"))
-        self.map.create_metadata(width=int(self.tree_root.attrib["width"]))
-        self.map.create_metadata(height=int(self.tree_root.attrib["height"]))
-        self.map.create_metadata(type="original")
-        self.map.create_metadata(description=description_data["description"])
+        self.scenario.create_metadata(id=self.get_xml_properties(metadata, "id"))
+        self.scenario.create_metadata(
+            filename=self.get_xml_properties(metadata, "filename")
+        )
+        self.scenario.create_metadata(name=self.get_xml_properties(metadata, "name"))
+        self.scenario.create_metadata(
+            creator=self.get_xml_properties(metadata, "creator")
+        )
+        self.scenario.create_metadata(width=int(self.tree_root.attrib["width"]))
+        self.scenario.create_metadata(height=int(self.tree_root.attrib["height"]))
+        self.scenario.create_metadata(type="original")
+        self.scenario.create_metadata(description=description_data["description"])
 
-        self.map.create_time(**time_data)
-        self.map.create_turn(**turn_data)
+        self.scenario.create_time(**time_data)
+        self.scenario.create_turn(**turn_data)
 
         for faction in factions_data.values():
-            self.map.create_faction(**faction)
+            self.scenario.create_faction(**faction)
 
         for filename in listdir(self.path + "unit_icons"):
             if not filename.endswith(".png"):
                 continue
             with open(self.path + "unit_icons/" + filename, "rb") as icon:
                 icon_binary = icon.read()
-                self.map.create_unit_icon(
+                self.scenario.create_unit_icon(
                     filename[:-4], b64encode(icon_binary).decode("utf-8")
                 )
         with open(f"{RESOURCES_DIR}/unit/unknown.png", "rb") as icon:
             icon_binary = icon.read()
-            self.map.create_unit_icon("unknown", b64encode(icon_binary).decode("utf-8"))
+            self.scenario.create_unit_icon(
+                "unknown", b64encode(icon_binary).decode("utf-8")
+            )
 
         for unit_type in unit_types.values():
-            self.map.create_unit_type(**unit_type)
+            self.scenario.create_unit_type(**unit_type)
 
         for unit in units_data:
-            self.map.create_unit(**unit)
+            self.scenario.create_unit(**unit)
 
-        for y in range(self.map.data["metadata"]["height"]):
-            for x in range(self.map.data["metadata"]["width"]):
+        for y in range(self.scenario.data["metadata"]["height"]):
+            for x in range(self.scenario.data["metadata"]["width"]):
                 global cx
                 global cy
                 cx = x
                 cy = y
-                self.map.create_hexagon(
+                self.scenario.create_hexagon(
                     x,
                     y,
                     self.get_terrain_by_value(terrain_data[y][x]),
@@ -112,15 +120,15 @@ class MapCompile:
                 )
 
         for city in landmark_detail_data["city"]:
-            self.map.create_landmark(landmark_type="city", **city)
+            self.scenario.create_landmark(landmark_type="city", **city)
         for oilfield in landmark_detail_data["oilfield"]:
-            self.map.create_landmark(landmark_type="oilfield", **oilfield)
+            self.scenario.create_landmark(landmark_type="oilfield", **oilfield)
         for supply in landmark_detail_data["supply"]:
-            self.map.create_landmark(landmark_type="supply", **supply)
+            self.scenario.create_landmark(landmark_type="supply", **supply)
 
-        hash = md5(dumps(self.map.data, sort_keys=True).encode("utf8")).hexdigest()
-        self.map.create_metadata(hash=hash)
-        self.map.create_metadata(timestamp=int(time()))
+        hash = md5(dumps(self.scenario.data, sort_keys=True).encode("utf8")).hexdigest()
+        self.scenario.create_metadata(hash=hash)
+        self.scenario.create_metadata(timestamp=int(time()))
 
     def get_xml_properties(self, properties, key):
         for property in properties.findall("property"):
@@ -169,11 +177,11 @@ class MapCompile:
             case 0:
                 return "neutral"
             case 1:
-                for dict_value in self.map.data["factions"].values():
+                for dict_value in self.scenario.data["factions"].values():
                     if dict_value.get("id") == "faction_0":
                         return dict_value.get("name")
             case 2:
-                for dict_value in self.map.data["factions"].values():
+                for dict_value in self.scenario.data["factions"].values():
                     if dict_value.get("id") == "faction_1":
                         return dict_value.get("name")
             case _:
@@ -261,19 +269,19 @@ def run():
 
     values = prompt(
         [
-            List("map_id", "map", listdir("./maps_data")),
+            List("scenario_id", "scenario", listdir(SCENARIOS_DATA_DIR)),
         ]
     )
 
-    map_id = values["map_id"]
+    scenario_id = values["scenario_id"]
 
-    if map_id not in listdir(MAPS_DATA_DIR):
-        print(f"[ERROR] invalid map id '{map_id}'")
+    if scenario_id not in listdir(SCENARIOS_DATA_DIR):
+        print(f"[ERROR] invalid scenario id '{scenario_id}'")
         exit()
 
-    map_factory = MapCompile(map_id)
-    filename = map_factory.map.data["metadata"]["filename"]
-    filepath = f"{MAPS_DIR}/{filename}"
+    scenario_factory = ScenarioCompile(scenario_id)
+    filename = scenario_factory.scenario.data["metadata"]["filename"]
+    filepath = f"{SCENARIOS_DIR}/{filename}"
     with open(filepath, "w+") as file:
-        dump(map_factory.map.data, file)
+        dump(scenario_factory.scenario.data, file)
         print(f"[INFO] output '{filepath}'")

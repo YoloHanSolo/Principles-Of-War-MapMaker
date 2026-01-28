@@ -6,28 +6,34 @@ from inquirer import List, prompt
 
 BASE_DIR = path.dirname(path.abspath(__file__))
 ROOT_DIR = path.abspath(path.join(BASE_DIR, ".."))
-MAPS_DATA_DIR = path.join(ROOT_DIR, "maps_data")
+SCENARIOS_DATA_DIR = path.join(ROOT_DIR, "scenarios_data")
 
 
 def run():
 
     values = prompt(
         [
-            List("map_id", "map", listdir(MAPS_DATA_DIR)),
+            List("scenario_id", "scenario", listdir(SCENARIOS_DATA_DIR)),
         ]
     )
 
-    map_id = values["map_id"]
+    scenario_id = values["scenario_id"]
 
-    if path.exists(f"{MAPS_DATA_DIR}/{map_id}/landmarks.json"):
-        print(f"[ERROR] '{MAPS_DATA_DIR}/{map_id}/landmarks.json' already exists")
+    if path.exists(f"{SCENARIOS_DATA_DIR}/{scenario_id}/landmarks.json"):
+        print(
+            f"[ERROR] '{SCENARIOS_DATA_DIR}/{scenario_id}/landmarks.json' already exists"
+        )
         exit()
 
     tree_root = None
     try:
-        tree_root = ElementTree.parse(f"{MAPS_DATA_DIR}/{map_id}/map.tmx").getroot()
+        tree_root = ElementTree.parse(
+            f"{SCENARIOS_DATA_DIR}/{scenario_id}/scenario.tmx"
+        ).getroot()
     except:
-        print(f"[ERROR] error when parsing '{MAPS_DATA_DIR}/{map_id}/map.tmx'")
+        print(
+            f"[ERROR] error when parsing '{SCENARIOS_DATA_DIR}/{scenario_id}/scenario.tmx'"
+        )
         exit()
 
     xml_element = None
@@ -69,7 +75,9 @@ def run():
         print(f"[ERROR] failed to create landmarks.json template")
         exit()
 
-    with open(f"{MAPS_DATA_DIR}/{map_id}/landmarks.json", "w+") as file:
+    with open(f"{SCENARIOS_DATA_DIR}/{scenario_id}/landmarks.json", "w+") as file:
         dump(output, file)
 
-    print(f"[INFO] template generated '{MAPS_DATA_DIR}/{map_id}/landmarks.json'")
+    print(
+        f"[INFO] template generated '{SCENARIOS_DATA_DIR}/{scenario_id}/landmarks.json'"
+    )

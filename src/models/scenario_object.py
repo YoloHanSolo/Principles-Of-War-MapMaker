@@ -1,7 +1,7 @@
 from src.types.enums import UnitType, TerrainType, LandmarkType
 
 
-class MapObject:
+class ScenarioObject:
 
     def __init__(self) -> None:
         self.data = {
