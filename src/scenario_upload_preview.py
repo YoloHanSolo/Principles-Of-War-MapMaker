@@ -95,18 +95,14 @@ def run():
                 json={"email": email, "password": password},
             )
 
+            print(response)
+            print(response.json())
+
             if response.status_code == 200:
                 print("[INFO] authenticated")
                 jwt_token = response.json()["jwt_token"]
                 save_token(stage, jwt_token)
-            elif response.status_code == 400:
-                print("[ERROR] web server response 400")
-                exit()
-            elif response.status_code == 401:
-                print("[ERROR] invalid credentials 401")
-                exit()
-            elif response.status_code == 404:
-                print("[ERROR] web server response 404")
+            else:
                 exit()
         except:
             print("[ERROR] server offline")
@@ -128,17 +124,9 @@ def run():
                 },
             )
 
-            if response.status_code == 200:
-                print(f"[INFO] success 200 - {response.json()['status']}")
-            elif response.status_code == 400:
-                print("[ERROR] web server response 400")
-                exit()
-            elif response.status_code == 401:
-                print("[ERROR] invalid credentials 401")
-                exit()
-            elif response.status_code == 415:
-                print("[ERROR] unsupported media type 415")
-                exit()
+            print(response)
+            print(response.json())
+
     except FileNotFoundError:
         print(
             f"[ERROR] could not open preview file '{SCENARIOS_PREVIEW_DIR}/{filename}'"
