@@ -7,6 +7,7 @@ from src.scenario_landmarks_template_generator import (
 from src.scenario_upload import run as scenario_upload
 from src.scenario_new import run as scenario_new
 from src.scenario_generate_preview import run as scenario_generate_preview
+from src.scenario_upload_preview import run as scenario_upload_preview
 
 commands = {
     "Compile Scenario": scenario_compile,
@@ -15,6 +16,7 @@ commands = {
     "Upload Scenario To Server": scenario_upload,
     "Create New Scenario": scenario_new,
     "Generate Scenario Preview": scenario_generate_preview,
+    "Upload Scenario Preview": scenario_upload_preview,
 }
 
 if __name__ == "__main__":

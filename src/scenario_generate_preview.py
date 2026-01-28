@@ -8,6 +8,8 @@ BASE_DIR = path.dirname(path.abspath(__file__))
 ROOT_DIR = path.abspath(path.join(BASE_DIR, ".."))
 SCENARIOS_DIR = path.join(ROOT_DIR, "scenarios")
 SCENARIOS_DATA_DIR = path.join(ROOT_DIR, "scenarios_data")
+SCENARIOS_PREVIEW_DIR = path.join(ROOT_DIR, "scenarios_preview")
+
 RESOURCES_DIR = path.join(ROOT_DIR, "resources")
 
 HEXAGON_CORNERS = ((60, 0), (120, 33), (120, 107), (60, 140), (0, 107), (0, 33))
@@ -295,7 +297,7 @@ class ScenarioPreview:
             steps_taken += increment
 
     def save_canvas(self):
-        self.canvas.save(path.join(SCENARIOS_DATA_DIR, self.scenario_id, "preview.png"))
+        self.canvas.save(path.join(SCENARIOS_PREVIEW_DIR, f"{self.scenario_id}.png"))
 
 
 def run():
